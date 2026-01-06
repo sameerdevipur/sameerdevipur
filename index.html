@@ -2,23 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sameer</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="work.html">Work</a>
-    <a href="blog.html">Blog</a>
-    <a href="side-quests.html">Side Quests</a>
-    <a href="travel.html">Where I’ve Been</a>
-    <a href="contact.html">Say Hello</a>
-  </nav>
+  <title>Sameer Devipur</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --text-main: #111;
+      --text-muted: #555;
+      --bg: #ffffff;
+      --max-width: 720px;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      font-family: "Inter", system-ui, sans-serif;
+      color: var(--text-main);
+      line-height: 1.65;
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 12vh auto;
+      padding: 0 24px;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 4vw, 3rem);
+      font-weight: 500;
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin: 8vh auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
   <main>
     <h1>Hi, I’m Sameer.</h1>
-    <p>Welcome to my website…</p>
+
+    <p>
+      Welcome to my website. This is a small collection of things I find worth
+      sharing, ranging from my work in science and energy research to notes,
+      experiments, games, and ideas that refuse to stay in my head. You will
+      find snapshots of what I am working on, informal writing, progress logs,
+      a few fun facts, and a few snaps that show the world I see through my
+      eyes. Nothing here is meant to be definitive. It is a record of learning,
+      tinkering, and occasionally getting things right for the wrong reasons.
+    </p>
   </main>
 </body>
 </html>
