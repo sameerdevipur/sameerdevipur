@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Work — Sameer Devipur</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --text-main: #111;
+      --text-muted: #555;
+      --text-light: #777;
+      --bg: #ffffff;
+      --max-width: 720px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      font-family: "Inter", system-ui, sans-serif;
+      color: var(--text-main);
+      line-height: 1.7;
+    }
+
+    header {
+      max-width: var(--max-width);
+      margin: 40px auto 0;
+      padding: 0 24px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text-light);
+      font-size: 0.9rem;
+      margin-right: 16px;
+    }
+
+    nav a:hover {
+      color: var(--text-main);
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 10vh auto;
+      padding: 0 24px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 3.5vw, 2.6rem);
+      font-weight: 500;
+      margin-bottom: 2rem;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      margin-bottom: 1.4rem;
+    }
+
+    figure {
+      margin: 3rem 0;
+    }
+
+    figure img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    figcaption {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      margin-top: 0.6rem;
+      line-height: 1.4;
+    }
+
+    .citation {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      margin-top: 0.6rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="blog.html">Blog</a>
+      <a href="side-quests.html">Side Quests</a>
+      <a href="travel.html">Where I’ve Been</a>
+      <a href="contact.html">Say Hello</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>My work</h1>
+
+    <p>
+      My work sits at the uncomfortable but fascinating edge where energy
+      storage stops behaving politely. I am a PhD student in physics working
+      on thermal runaway in lithium-ion batteries, a failure process where a
+      battery transitions from a controlled electrochemical device into a
+      rapidly evolving chemical reactor.
+    </p>
+
+    <p>
+      Once initiated, thermal runaway is fast, violent, and unforgiving.
+      Temperatures rise within seconds, gases are released, materials
+      decompose, and the system quickly outruns any simple safety mechanism.
+      Understanding this process in detail is not optional anymore. It is a
+      prerequisite for safe electrification.
+    </p>
+
+    <figure>
+      <img src="assets/images/thermal-runaway-abuse.png"
+           alt="Mechanical, electrical, and thermal abuse pathways leading to thermal runaway">
+      <figcaption>
+        Common abuse scenarios that can initiate thermal runaway in
+        lithium-ion cells, leading to venting, fire, or explosion.
+      </figcaption>
+      <div class="citation">
+        Yixin Dai, Aidin Panahi, <em>Thermal runaway process in lithium-ion
+        batteries: A review</em>, Next Energy, 2025.
+        https://doi.org/10.1016/j.nxener.2024.100186
+      </div>
+    </figure>
+
+    <p>
+      At a high level, thermal runaway begins when heat generation inside a
+      cell exceeds its ability to dissipate that heat. The trigger can be
+      mechanical abuse, electrical abuse, or external heating. Internally,
+      it is a cascade. The solid electrolyte interphase starts to break down.
+      Electrolytes decompose. Electrodes react with each other in ways they
+      were never designed to.
+    </p>
+
+    <p>
+      Current research has mapped many pieces of this puzzle, but not the
+      full picture. We understand individual reactions reasonably well in
+      isolation. What remains difficult is connecting these pieces into a
+      single, time-resolved description of a real thermal runaway event.
+    </p>
+
+    <p>
+      This is where my work comes in.
+    </p>
+
+    <p>
+      I use laser-based diagnostics to observe thermal runaway as it unfolds,
+      in real time, without touching the system. Lasers allow remote,
+      selective, and extremely fast interrogation of reacting systems.
+    </p>
+
+    <p>
+      At the core of this approach is spectroscopy. Molecules interact with
+      light in specific ways. Each species absorbs or emits light at
+      characteristic wavelengths that act as fingerprints. Tracking these
+      interactions enables time-resolved chemistry rather than post-mortem
+      interpretation.
+    </p>
+
+    <figure>
+      <img src="assets/images/spectroscopy-energy-levels.png"
+           alt="Energy level diagram showing absorption and emission">
+      <figcaption>
+        Schematic representation of absorption and emission processes used
+        in spectroscopic diagnostics.
+      </figcaption>
+    </figure>
+
+    <p>
+      Different spectroscopic techniques emphasize different parts of the
+      problem. Absorption spectroscopy tracks toxic and flammable gases.
+      Emission spectroscopy reveals excited species and high-temperature
+      reaction zones. Laser-induced breakdown spectroscopy probes elemental
+      composition when materials violently fragment.
+    </p>
+
+    <p>
+      The challenge is not only experimental. Thermal runaway is a transient,
+      multi-physics event involving heat transfer, fluid dynamics, chemical
+      kinetics, and materials failure all at once. Extracting meaning from
+      this complexity is a central part of my work.
+    </p>
+
+    <p>
+      The end goal is not just to describe thermal runaway, but to model it as
+      a complete process. Prediction enables prevention. Prevention is where
+      battery safety improves.
+    </p>
+
+    <p>
+      In short, I am trying to turn a catastrophic event into a measurable,
+      understandable, and ultimately manageable phenomenon.
+    </p>
+  </main>
+
+</body>
+</html>
