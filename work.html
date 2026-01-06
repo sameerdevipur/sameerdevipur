@@ -59,6 +59,7 @@
 
     p {
       font-size: 1.05rem;
+      font-weight: 400;
       color: var(--text-muted);
       margin-bottom: 1.4rem;
     }
@@ -84,22 +85,28 @@
       color: var(--text-light);
       margin-top: 0.6rem;
     }
+
+    @media (max-width: 600px) {
+      main {
+        margin: 8vh auto;
+      }
+    }
   </style>
 </head>
 
 <body>
 
- <header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="work.html">My Work</a>
-    <a href="blog.html">Blog</a>
-    <a href="side-quests.html">Side Quests</a>
-    <a href="travel.html">Travel Diary</a>
-    <a href="contact.html">Say Hello!</a>
-  </nav>
-</header>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="work.html">My Work</a>
+      <a href="blog.html">Blog</a>
+      <a href="side-quests.html">Side Quests</a>
+      <a href="travel.html">Travel Diary</a>
+      <a href="contact.html">Say Hello!</a>
+    </nav>
+  </header>
 
   <main>
     <h1>My work</h1>
@@ -122,10 +129,10 @@
 
     <figure>
       <img src="assets/images/thermal-runaway-abuse.png"
-           alt="Mechanical, electrical, and thermal abuse pathways leading to thermal runaway">
+           alt="Abuse scenarios leading to thermal runaway in lithium-ion batteries">
       <figcaption>
-        Common abuse scenarios that can initiate thermal runaway in
-        lithium-ion cells, leading to venting, fire, or explosion.
+        Typical mechanical, electrical, and thermal abuse pathways that can
+        initiate thermal runaway in lithium-ion cells.
       </figcaption>
       <div class="citation">
         Yixin Dai, Aidin Panahi, <em>Thermal runaway process in lithium-ion
@@ -162,7 +169,7 @@
 
     <p>
       At the core of this approach is spectroscopy. Molecules interact with
-      light in specific ways. Each species absorbs or emits light at
+      light in very specific ways. Each species absorbs or emits light at
       characteristic wavelengths that act as fingerprints. Tracking these
       interactions enables time-resolved chemistry rather than post-mortem
       interpretation.
@@ -170,10 +177,10 @@
 
     <figure>
       <img src="assets/images/spectroscopy-energy-levels.png"
-           alt="Energy level diagram showing absorption and emission">
+           alt="Energy level diagram illustrating absorption and emission spectroscopy">
       <figcaption>
-        Schematic representation of absorption and emission processes used
-        in spectroscopic diagnostics.
+        Simplified schematic of absorption and emission processes used in
+        laser-based spectroscopic diagnostics.
       </figcaption>
     </figure>
 
