@@ -14,17 +14,41 @@
     :root {
       --text-main: #111;
       --text-muted: #555;
+      --text-light: #777;
       --bg: #ffffff;
       --max-width: 720px;
     }
 
     body {
       margin: 0;
-      padding: 0;
       background: var(--bg);
       font-family: "Inter", system-ui, sans-serif;
       color: var(--text-main);
       line-height: 1.65;
+    }
+
+    header {
+      max-width: var(--max-width);
+      margin: 40px auto 0;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header a {
+      text-decoration: none;
+      color: var(--text-light);
+      font-size: 0.9rem;
+      margin-left: 16px;
+    }
+
+    header a:first-child {
+      margin-left: 0;
+    }
+
+    header a:hover {
+      color: var(--text-main);
     }
 
     main {
@@ -48,6 +72,11 @@
     }
 
     @media (max-width: 600px) {
+      header {
+        flex-wrap: wrap;
+        row-gap: 8px;
+      }
+
       main {
         margin: 8vh auto;
       }
@@ -56,6 +85,19 @@
 </head>
 
 <body>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="blog.html">Blog</a>
+      <a href="side-quests.html">Side Quests</a>
+      <a href="travel.html">Where I’ve Been</a>
+      <a href="contact.html">Say Hello</a>
+    </nav>
+  </header>
+
   <main>
     <h1>Hi, I’m Sameer.</h1>
 
@@ -69,5 +111,6 @@
       tinkering, and occasionally getting things right for the wrong reasons.
     </p>
   </main>
+
 </body>
 </html>
