@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About Me — Sameer Devipur</title>
+  <title>Sameer Devipur</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Font -->
@@ -24,7 +24,7 @@
       background: var(--bg);
       font-family: "Inter", system-ui, sans-serif;
       color: var(--text-main);
-      line-height: 1.7;
+      line-height: 1.65;
     }
 
     header {
@@ -46,14 +46,14 @@
 
     main {
       max-width: var(--max-width);
-      margin: 10vh auto;
+      margin: 12vh auto;
       padding: 0 24px;
     }
 
     h1 {
-      font-size: clamp(2rem, 3.5vw, 2.6rem);
+      font-size: clamp(2.2rem, 4vw, 3rem);
       font-weight: 500;
-      margin-bottom: 2rem;
+      margin-bottom: 1.4rem;
       letter-spacing: -0.02em;
     }
 
@@ -61,11 +61,13 @@
       font-size: 1.05rem;
       font-weight: 400;
       color: var(--text-muted);
-      margin-bottom: 1.4rem;
+      margin: 0;
     }
 
-    p:last-child {
-      margin-bottom: 0;
+    @media (max-width: 600px) {
+      main {
+        margin: 8vh auto;
+      }
     }
   </style>
 </head>
@@ -85,27 +87,16 @@
   </header>
 
   <main>
-    <h1>About me</h1>
+    <h1>Hi, I’m Sameer.</h1>
 
     <p>
-      I would like to see myself as someone who is constantly curious and
-      mildly allergic to simple answers. Professionally, I am a PhD student
-      in physics working on battery safety and energy systems, which mostly
-      means poking complex systems until they reveal how they behave.
-    </p>
-
-    <p>
-      My academic background is in chemical engineering, so I tend to think
-      in terms of processes, materials, and why things fail in interesting
-      ways. In my free time, I track game progress, write notes that may or
-      may not turn into proper ideas, take photos of things that catch my
-      eye, and collect fun facts that serve no immediate purpose but feel
-      important anyway.
-    </p>
-
-    <p>
-      This site is less a formal biography and more an honest snapshot of
-      how I think, work, and occasionally overthink.
+      Welcome to my website. This is a small collection of things I find worth
+      sharing, ranging from my work in science and energy research to notes,
+      experiments, games, and ideas that refuse to stay in my head. You will
+      find snapshots of what I am working on, informal writing, progress logs,
+      a few fun facts, and a few snaps that show the world I see through my
+      eyes. Nothing here is meant to be definitive. It is a record of learning,
+      tinkering, and occasionally getting things right for the wrong reasons.
     </p>
   </main>
 
