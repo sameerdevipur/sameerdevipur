@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sameer Devipur</title>
+  <title>About Me — Sameer Devipur</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Font -->
@@ -24,43 +24,36 @@
       background: var(--bg);
       font-family: "Inter", system-ui, sans-serif;
       color: var(--text-main);
-      line-height: 1.65;
+      line-height: 1.7;
     }
 
     header {
       max-width: var(--max-width);
       margin: 40px auto 0;
       padding: 0 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
     }
 
-    header a {
+    nav a {
       text-decoration: none;
       color: var(--text-light);
       font-size: 0.9rem;
-      margin-left: 16px;
+      margin-right: 16px;
     }
 
-    header a:first-child {
-      margin-left: 0;
-    }
-
-    header a:hover {
+    nav a:hover {
       color: var(--text-main);
     }
 
     main {
       max-width: var(--max-width);
-      margin: 12vh auto;
+      margin: 10vh auto;
       padding: 0 24px;
     }
 
     h1 {
-      font-size: clamp(2.2rem, 4vw, 3rem);
+      font-size: clamp(2rem, 3.5vw, 2.6rem);
       font-weight: 500;
-      margin-bottom: 1.2rem;
+      margin-bottom: 2rem;
       letter-spacing: -0.02em;
     }
 
@@ -68,18 +61,11 @@
       font-size: 1.05rem;
       font-weight: 400;
       color: var(--text-muted);
-      margin: 0;
+      margin-bottom: 1.4rem;
     }
 
-    @media (max-width: 600px) {
-      header {
-        flex-wrap: wrap;
-        row-gap: 8px;
-      }
-
-      main {
-        margin: 8vh auto;
-      }
+    p:last-child {
+      margin-bottom: 0;
     }
   </style>
 </head>
@@ -87,28 +73,39 @@
 <body>
 
   <header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="work.html">My Work</a>
-    <a href="blog.html">Blog</a>
-    <a href="side-quests.html">Side Quests</a>
-    <a href="travel.html">Travel Diary</a>
-    <a href="contact.html">Say Hello!</a>
-  </nav>
-</header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="work.html">My Work</a>
+      <a href="blog.html">Blog</a>
+      <a href="side-quests.html">Side Quests</a>
+      <a href="travel.html">Travel Diary</a>
+      <a href="contact.html">Say Hello!</a>
+    </nav>
+  </header>
 
   <main>
-    <h1>Hi, I’m Sameer.</h1>
+    <h1>About me</h1>
 
     <p>
-      Welcome to my website. This is a small collection of things I find worth
-      sharing, ranging from my work in science and energy research to notes,
-      experiments, games, and ideas that refuse to stay in my head. You will
-      find snapshots of what I am working on, informal writing, progress logs,
-      a few fun facts, and a few snaps that show the world I see through my
-      eyes. Nothing here is meant to be definitive. It is a record of learning,
-      tinkering, and occasionally getting things right for the wrong reasons.
+      I would like to see myself as someone who is constantly curious and
+      mildly allergic to simple answers. Professionally, I am a PhD student
+      in physics working on battery safety and energy systems, which mostly
+      means poking complex systems until they reveal how they behave.
+    </p>
+
+    <p>
+      My academic background is in chemical engineering, so I tend to think
+      in terms of processes, materials, and why things fail in interesting
+      ways. In my free time, I track game progress, write notes that may or
+      may not turn into proper ideas, take photos of things that catch my
+      eye, and collect fun facts that serve no immediate purpose but feel
+      important anyway.
+    </p>
+
+    <p>
+      This site is less a formal biography and more an honest snapshot of
+      how I think, work, and occasionally overthink.
     </p>
   </main>
 
