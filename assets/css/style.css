@@ -46,7 +46,6 @@ header::after {
   );
 }
 
-
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -66,7 +65,6 @@ nav a:hover {
   color: var(--accent);
   opacity: 0.85;
 }
-
 
 /* ---------- MAIN ---------- */
 
@@ -98,26 +96,107 @@ p {
   margin-bottom: 1.4rem;
 }
 
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- PROFILE IMAGE ---------- */
+
 .profile-pic {
   display: block;
-
   width: 144px;
   height: 144px;
-  max-width: 144px;
-
   border-radius: 50%;
   object-fit: cover;
-
   margin: 0 0 1.6rem 2px;
-
   border: 2px solid var(--accent-soft);
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.1);
 }
-
 
 @media (max-width: 600px) {
   .profile-pic {
     width: 112px;
     height: 112px;
   }
+}
+
+/* ---------- TRAVEL META ---------- */
+
+.travel-meta {
+  margin-top: 4rem;
+}
+
+.origin-line {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-bottom: 1.8rem;
+}
+
+.origin-line span {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+/* ---------- PASSPORT STAMP WALL ---------- */
+
+.stamp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.stamp {
+  position: relative;
+  padding: 1.2rem 0.8rem;
+  border: 1px solid
+    color-mix(in srgb, var(--text-light) 35%, transparent);
+  background:
+    color-mix(in srgb, var(--surface) 60%, transparent);
+  text-align: center;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.stamp::after {
+  content: "VISITED";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  letter-spacing: 0.28em;
+  opacity: 0;
+  transform: rotate(-12deg);
+  color: var(--text-light);
+  transition: opacity 0.2s ease;
+}
+
+.stamp:hover {
+  transform: translateY(-2px);
+  border-color: var(--text-muted);
+}
+
+.stamp:hover::after {
+  opacity: 0.9;
+}
+
+/* ---------- SEMANTIC VARIANTS ---------- */
+
+.origin-stamp {
+  border-color: var(--accent-soft);
+}
+
+.origin-stamp::after {
+  content: "ORIGIN";
+}
+
+.base-stamp {
+  border-color:
+    color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.base-stamp::after {
+  content: "CURRENT BASE";
 }
