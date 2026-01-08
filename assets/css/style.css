@@ -101,23 +101,23 @@ p {
 .profile-pic {
   display: block;
 
-  width: 120px;
-  height: 120px;
-  max-width: 120px;
+  width: 144px;
+  height: 144px;
+  max-width: 144px;
 
   border-radius: 50%;
   object-fit: cover;
 
   margin: 0 0 1.6rem 2px;
 
-  border: 3px solid var(--accent-soft);
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+  border: 2px solid var(--accent-soft);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.1);
 }
 
 
 @media (max-width: 600px) {
   .profile-pic {
-    width: 96px;
-    height: 96px;
+    width: 112px;
+    height: 112px;
   }
 }
