@@ -12,9 +12,13 @@
 
   <style>
     :root {
-      --text-main: #111;
-      --text-muted: #555;
-      --text-light: #777;
+      --text-main: #0f172a;
+      --text-muted: #334155;
+      --text-light: #64748b;
+
+      --accent: #6366f1;
+      --accent-soft: #e0e7ff;
+
       --bg: #ffffff;
       --max-width: 720px;
     }
@@ -27,68 +31,111 @@
       line-height: 1.7;
     }
 
+    /* ---------- HEADER ---------- */
+
     header {
       max-width: var(--max-width);
-      margin: 40px auto 0;
-      padding: 0 24px;
+      margin: 32px auto 0;
+      padding: 0 24px 14px;
+      border-bottom: 1px solid #e5e7eb;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      left: 24px;
+      bottom: -1px;
+      width: 64px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), #22d3ee);
+      border-radius: 2px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
     }
 
     nav a {
       text-decoration: none;
       color: var(--text-light);
       font-size: 0.9rem;
-      margin-right: 16px;
+      padding: 4px 2px;
+      transition: color 0.2s ease;
     }
 
     nav a:hover {
-      color: var(--text-main);
+      color: var(--accent);
     }
+
+    /* ---------- MAIN ---------- */
 
     main {
       max-width: var(--max-width);
-      margin: 10vh auto;
+      margin: 12vh auto;
       padding: 0 24px;
     }
 
     h1 {
-      font-size: clamp(2rem, 3.5vw, 2.6rem);
+      font-size: clamp(2.2rem, 3.8vw, 2.9rem);
       font-weight: 500;
-      margin-bottom: 2rem;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.03em;
+      margin-bottom: 2.4rem;
+      background: linear-gradient(
+        90deg,
+        var(--text-main),
+        var(--accent)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     p {
       font-size: 1.05rem;
-      font-weight: 400;
       color: var(--text-muted);
+      max-width: 64ch;
       margin-bottom: 1.4rem;
     }
 
+    em {
+      color: var(--text-main);
+      font-style: italic;
+    }
+
+    /* ---------- FIGURES ---------- */
+
     figure {
-      margin: 3rem 0;
+      margin: 3.5rem 0;
     }
 
     figure img {
       width: 100%;
-      border-radius: 6px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
     }
 
     figcaption {
       font-size: 0.85rem;
       color: var(--text-light);
-      margin-top: 0.6rem;
-      line-height: 1.4;
+      margin-top: 0.7rem;
+      line-height: 1.45;
+      max-width: 60ch;
     }
 
     .citation {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: var(--text-light);
-      margin-top: 0.6rem;
+      margin-top: 0.4rem;
+      max-width: 60ch;
     }
+
+    /* ---------- RESPONSIVE ---------- */
 
     @media (max-width: 600px) {
       main {
-        margin: 8vh auto;
+        margin: 9vh auto;
       }
     }
   </style>
@@ -113,18 +160,18 @@
 
     <p>
       My work sits at the uncomfortable but fascinating edge where energy
-      storage stops behaving politely. I am a PhD student in Physics
-      working on Thermal Runaway in Lithium-ion batteries, a failure
-      process in which a battery transitions from a controlled
-      electrochemical device into a rapidly evolving chemical reactor.
+      storage stops behaving politely. I am a PhD student in Physics working
+      on thermal runaway in lithium-ion batteries, a failure process in which
+      a battery transitions from a controlled electrochemical device into a
+      rapidly evolving chemical reactor.
     </p>
 
     <p>
       Once initiated, thermal runaway is fast, violent, and unforgiving.
       Temperature rises within seconds, gases are released, materials
-      decompose, and the system quickly outruns any simple safety
-      mechanism. Understanding this process in detail is no longer
-      optional. It is a prerequisite for <em>safe electrification</em>.
+      decompose, and the system quickly outruns any simple safety mechanism.
+      Understanding this process in detail is no longer optional. It is a
+      prerequisite for <em>safe electrification</em>.
     </p>
 
     <figure>
@@ -142,34 +189,16 @@
     </figure>
 
     <p>
-      At a high level, thermal runaway begins when heat generation inside
-      a cell exceeds its ability to dissipate that heat. The trigger can
-      be mechanical abuse, electrical abuse, or external heating.
-      Internally, it unfolds as a cascade. The solid electrolyte
-      interphase begins to break down and electrolytes decompose. Electrodes
-      react with each other in ways they were never designed to.
+      At a high level, thermal runaway begins when heat generation inside a
+      cell exceeds its ability to dissipate that heat. Internally, it unfolds
+      as a cascade. The solid electrolyte interphase breaks down, electrolytes
+      decompose, and electrodes react in ways they were never designed to.
     </p>
 
     <p>
-      Each step releases additional heat, accelerating the next. The
-      system feeds on itself. By the time flames or venting are visible,
-      the most important chemistry has already occurred.
-    </p>
-
-    <p>
-      Current research has mapped many pieces of this puzzle, but not the
-      full picture. We understand individual reaction pathways reasonably
-      well in isolation. We have solid models for heat generation under
-      normal operation, and we know typical onset temperatures for
-      specific decomposition mechanisms.
-    </p>
-
-    <p>
-      What remains difficult is connecting these pieces into a single,
-      time-resolved description of a real thermal runaway event. Most
-      measurements are indirect. Most diagnostics integrate over time.
-      Many experiments stop just before things become truly interesting,
-      for understandable safety reasons.
+      Each step releases additional heat, accelerating the next. By the time
+      flames or venting are visible, the most important chemistry has already
+      occurred.
     </p>
 
     <p>
@@ -177,27 +206,10 @@
     </p>
 
     <p>
-      I use Laser-based Diagnostics to observe thermal runaway as it
-      unfolds, in real time, without touching the system. Lasers allow
-      remote, selective, and extremely fast interrogation of matter.
-      Instead of measuring temperature at a single point or collecting
-      post-mortem debris, I probe which gas species are released, how
-      their concentrations evolve, and how reaction pathways shift as
-      the event progresses.
-    </p>
-
-    <p>
-      At the core of this approach is <em>Spectroscopy</em>. Molecules interact
-      with light in very specific ways. Each molecule absorbs or emits
-      light at characteristic wavelengths that act as fingerprints. By
-      tuning a laser to the appropriate wavelength and measuring how the
-      light changes as it passes through a gas plume, it becomes possible
-      to identify which species are present and in what quantities.
-    </p>
-
-    <p>
-      Performed fast enough, this yields time-resolved chemistry, not
-      just an outcome.
+      I use laser-based diagnostics to observe thermal runaway as it unfolds,
+      in real time, without touching the system. Lasers allow remote,
+      selective, and extremely fast interrogation of matter, revealing which
+      gas species are released and how reaction pathways evolve.
     </p>
 
     <figure>
@@ -210,52 +222,15 @@
     </figure>
 
     <p>
-      Different spectroscopic techniques emphasize different aspects of
-      the problem. Absorption spectroscopy tracks toxic and flammable
-      gases as they form and disappear. Emission spectroscopy reveals
-      excited species and high-temperature reaction zones. Laser-induced
-      breakdown spectroscopy probes elemental composition when materials
-      violently fragment.
+      Together, these tools allow reconstruction of the chemical narrative of
+      thermal runaway, frame by frame. The end goal is prediction, and
+      prediction enables prevention.
     </p>
 
     <p>
-      Together, these tools allow reconstruction of the chemical
-      narrative of thermal runaway, frame by frame.
-    </p>
-
-    <p>
-      The challenge is not only experimental. Thermal runaway is not a
-      clean experiment with steady boundary conditions. It is a
-      transient, multi-physics event involving heat transfer, fluid
-      dynamics, chemical kinetics, and materials failure all at once.
-    </p>
-
-    <p>
-      A significant part of my work involves extracting meaning from
-      this complexity and translating it into models that are both
-      physically grounded and practically useful.
-    </p>
-
-    <p>
-      The end goal is not merely to describe thermal runaway, but to
-      model it as a complete process. From the first instability to the
-      final venting products. From internal reactions to external
-      consequences.
-    </p>
-
-    <p>
-      A reliable model enables prediction. Prediction enables
-      prevention. And prevention is where battery safety improves,
-      whether through better materials, smarter pack design, early
-      detection systems, or informed regulation.
-    </p>
-
-    <p>
-      In short, I am trying to turn a catastrophic event into a
-      measurable, understandable, and ultimately manageable phenomenon.
-      Batteries will continue to power more of the world. My job is to
-      help ensure they fail less often, and when they do fail, that we
-      understand exactly why.
+      Batteries will continue to power more of the world. My work aims to
+      ensure they fail less often and, when they do fail, that we understand
+      exactly why.
     </p>
   </main>
 
