@@ -12,9 +12,13 @@
 
   <style>
     :root {
-      --text-main: #111;
-      --text-muted: #555;
-      --text-light: #777;
+      --text-main: #0f172a;      /* deep slate */
+      --text-muted: #334155;
+      --text-light: #64748b;
+
+      --accent: #6366f1;        /* indigo */
+      --accent-soft: #e0e7ff;
+
       --bg: #ffffff;
       --max-width: 720px;
     }
@@ -24,49 +28,83 @@
       background: var(--bg);
       font-family: "Inter", system-ui, sans-serif;
       color: var(--text-main);
-      line-height: 1.65;
+      line-height: 1.7;
     }
+
+    /* ---------- HEADER ---------- */
 
     header {
       max-width: var(--max-width);
-      margin: 40px auto 0;
-      padding: 0 24px;
+      margin: 32px auto 0;
+      padding: 0 24px 14px;
+      border-bottom: 1px solid #e5e7eb;
+      position: relative;
+    }
+
+    /* subtle accent line */
+    header::after {
+      content: "";
+      position: absolute;
+      left: 24px;
+      bottom: -1px;
+      width: 64px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), #22d3ee);
+      border-radius: 2px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
     }
 
     nav a {
       text-decoration: none;
-      color: var(--text-light);
       font-size: 0.9rem;
-      margin-right: 16px;
+      color: var(--text-light);
+      padding: 4px 2px;
+      position: relative;
+      transition: color 0.2s ease;
     }
 
     nav a:hover {
-      color: var(--text-main);
+      color: var(--accent);
     }
+
+    /* ---------- MAIN ---------- */
 
     main {
       max-width: var(--max-width);
-      margin: 12vh auto;
+      margin: 14vh auto;
       padding: 0 24px;
     }
 
     h1 {
-      font-size: clamp(2.2rem, 4vw, 3rem);
+      font-size: clamp(2.4rem, 4vw, 3.2rem);
       font-weight: 500;
-      margin-bottom: 1.4rem;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.2rem;
+      background: linear-gradient(
+        90deg,
+        var(--text-main),
+        var(--accent)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     p {
       font-size: 1.05rem;
-      font-weight: 400;
       color: var(--text-muted);
-      margin: 0;
+      max-width: 62ch;
     }
+
+    /* ---------- SMALL SCREENS ---------- */
 
     @media (max-width: 600px) {
       main {
-        margin: 8vh auto;
+        margin: 10vh auto;
       }
     }
   </style>
