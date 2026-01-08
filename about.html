@@ -12,13 +12,9 @@
 
   <style>
     :root {
-      --text-main: #0f172a;
-      --text-muted: #334155;
-      --text-light: #64748b;
-
-      --accent: #6366f1;
-      --accent-soft: #e0e7ff;
-
+      --text-main: #111;
+      --text-muted: #555;
+      --text-light: #777;
       --bg: #ffffff;
       --max-width: 720px;
     }
@@ -31,87 +27,50 @@
       line-height: 1.7;
     }
 
-    /* ---------- HEADER ---------- */
-
     header {
       max-width: var(--max-width);
-      margin: 32px auto 0;
-      padding: 0 24px 14px;
-      border-bottom: 1px solid #e5e7eb;
-      position: relative;
-    }
-
-    header::after {
-      content: "";
-      position: absolute;
-      left: 24px;
-      bottom: -1px;
-      width: 64px;
-      height: 3px;
-      background: linear-gradient(90deg, var(--accent), #22d3ee);
-      border-radius: 2px;
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
+      margin: 40px auto 0;
+      padding: 0 24px;
     }
 
     nav a {
       text-decoration: none;
       color: var(--text-light);
       font-size: 0.9rem;
-      padding: 4px 2px;
-      transition: color 0.2s ease;
+      margin-right: 16px;
     }
 
     nav a:hover {
-      color: var(--accent);
+      color: var(--text-main);
     }
-
-    /* ---------- MAIN ---------- */
 
     main {
       max-width: var(--max-width);
-      margin: 12vh auto;
+      margin: 10vh auto;
       padding: 0 24px;
     }
 
     h1 {
-      font-size: clamp(2.1rem, 3.5vw, 2.7rem);
+      font-size: clamp(2rem, 3.5vw, 2.6rem);
       font-weight: 500;
-      letter-spacing: -0.02em;
       margin-bottom: 2rem;
-      background: linear-gradient(
-        90deg,
-        var(--text-main),
-        var(--accent)
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.02em;
     }
 
     p {
       font-size: 1.05rem;
+      font-weight: 400;
       color: var(--text-muted);
-      max-width: 62ch;
       margin-bottom: 1.4rem;
     }
 
-    a {
-      color: var(--accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--accent-soft);
-    }
-
-    a:hover {
-      border-bottom-color: var(--accent);
+    p:last-child {
+      margin-bottom: 0;
     }
 
     @media (max-width: 600px) {
       main {
-        margin: 9vh auto;
+        margin: 8vh auto;
       }
     }
   </style>
@@ -135,24 +94,24 @@
     <h1>About Me</h1>
 
     <p>
-      I see myself as someone who is constantly curious and mildly allergic
-      to simple answers. Professionally, I am a PhD student in Physics working
-      on battery safety and energy systems, which mostly means poking complex
-      systems until they reveal how they behave.
+      I see myself as someone who is constantly curious and
+      mildly allergic to simple answers. Professionally, I am a PhD student
+      in Physics working on Battery Safety and Energy Systems, which mostly
+      means poking complex systems until they reveal how they behave.
     </p>
 
     <p>
-      My academic background is in Chemical Engineering, so I tend to think in
-      terms of processes, materials, and why things fail in interesting ways.
-      In my free time, I track game progress, write notes that may or may not
-      turn into proper ideas, take photos of things that catch my eye, and
-      collect fun facts that serve no immediate purpose but feel important
-      anyway.
+      My academic background is in Chemical Engineering, so I tend to think
+      in terms of processes, materials, and why things fail in interesting
+      ways. In my free time, I track game progress, write notes that may or
+      may not turn into proper ideas, take photos of things that catch my
+      eye, and collect fun facts that serve no immediate purpose but feel
+      important anyway.
     </p>
 
     <p>
-      This site is less a formal biography and more an honest snapshot of how
-      I think, work, and occasionally overthink.
+      This site is less a formal biography and more an honest snapshot of
+      how I think, work, and occasionally overthink.
     </p>
 
     <p>
@@ -161,6 +120,7 @@
          target="_blank" rel="noopener noreferrer">LinkedIn</a>
       has that covered.
     </p>
+
   </main>
 
 </body>
