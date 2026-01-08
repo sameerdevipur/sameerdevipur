@@ -102,7 +102,15 @@ p {
   object-fit: cover;
 
   margin-bottom: 1.6rem;
+  margin-left: 2px;
 
   border: 3px solid var(--accent-soft);
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
+
+@media (max-width: 600px) {
+  .profile-pic {
+    width: 96px;
+    height: 96px;
+  }
 }
