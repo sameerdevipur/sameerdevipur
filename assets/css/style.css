@@ -137,8 +137,8 @@ p:last-child {
 .ambient-flag {
   position: absolute;
   font-size: 1.4rem;
-  opacity: 0.22;
-  filter: blur(0.25px);
+  opacity: 0.3;
+  filter: blur(0.2px);
   transform: rotate(-6deg);
 }
 
