@@ -74,6 +74,11 @@ main {
   padding: 0 24px;
 }
 
+main {
+  position: relative;
+  z-index: 1;
+}
+
 h1 {
   font-size: clamp(2.2rem, 4vw, 3rem);
   font-weight: 500;
@@ -120,28 +125,34 @@ p:last-child {
   }
 }
 
-/* ---------- TRAVEL FLAGS ---------- */
+/* ---------- AMBIENT FLAG LAYER ---------- */
 
-.travel-flags {
-  margin-top: 4rem;
+.ambient-flags {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
 }
 
-.flag-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
-  gap: 1.2rem;
-  max-width: 320px;
+.ambient-flag {
+  position: absolute;
+  font-size: 1.4rem;
+  opacity: 0.1;
+  filter: blur(0.3px);
+  transform: rotate(-6deg);
 }
 
-.flag {
-  font-size: 1.6rem;
-  line-height: 1;
-  text-align: center;
-  opacity: 0.75;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
+/* Individual placements */
+.f1  { top: 14%; left: 6%; }
+.f2  { top: 26%; right: 10%; }
+.f3  { top: 42%; left: 12%; }
+.f4  { top: 58%; right: 14%; }
+.f5  { top: 72%; left: 18%; }
 
-.flag:hover {
-  opacity: 1;
-  transform: translateY(-2px);
-}
+.f6  { top: 20%; right: 28%; }
+.f7  { top: 38%; left: 30%; }
+.f8  { top: 55%; right: 32%; }
+.f9  { top: 68%; left: 40%; }
+
+.f10 { top: 34%; right: 48%; }
+.f11 { top: 84%; right: 6%; }
