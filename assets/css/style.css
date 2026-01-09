@@ -72,9 +72,6 @@ main {
   max-width: var(--max-width);
   margin: 12vh auto;
   padding: 0 24px;
-}
-
-main {
   position: relative;
   z-index: 1;
 }
@@ -140,7 +137,6 @@ p:last-child {
   opacity: 1;
   filter: none;
   transform: rotate(-6deg);
-  top: max(10%, var(--flag-top, 0));
 }
 
 /* Left gutter */
@@ -159,3 +155,9 @@ p:last-child {
 
 /* Corner accent */
 .f11 { top: 10%; right: 2%; }
+
+@media (max-width: 700px) {
+  .ambient-flags {
+    display: none;
+  }
+}
