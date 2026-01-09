@@ -140,19 +140,22 @@ p:last-child {
   opacity: 1;
   filter: none;
   transform: rotate(-6deg);
+  top: max(10%, var(--flag-top, 0));
 }
 
-/* Individual placements */
-.f1  { top: 14%; left: 6%; }
-.f2  { top: 26%; right: 10%; }
-.f3  { top: 42%; left: 12%; }
-.f4  { top: 58%; right: 14%; }
-.f5  { top: 72%; left: 18%; }
+/* Left gutter */
+.f1  { top: 16%; left: 4%; }
+.f3  { top: 38%; left: 6%; }
+.f5  { top: 62%; left: 8%; }
+.f7  { top: 78%; left: 10%; }
+.f9  { top: 88%; left: 6%; }
 
-.f6  { top: 20%; right: 28%; }
-.f7  { top: 38%; left: 30%; }
-.f8  { top: 55%; right: 32%; }
-.f9  { top: 68%; left: 40%; }
+/* Right gutter */
+.f2  { top: 20%; right: 4%; }
+.f4  { top: 34%; right: 6%; }
+.f6  { top: 52%; right: 8%; }
+.f8  { top: 68%; right: 6%; }
+.f10 { top: 82%; right: 4%; }
 
-.f10 { top: 34%; right: 48%; }
-.f11 { top: 84%; right: 6%; }
+/* Corner accent */
+.f11 { top: 10%; right: 2%; }
