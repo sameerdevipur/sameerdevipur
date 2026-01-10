@@ -203,3 +203,9 @@ p:last-child {
 .accordion-header[aria-expanded="true"] .accordion-icon {
   transform: rotate(90deg);
 }
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
