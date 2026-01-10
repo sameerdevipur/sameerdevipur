@@ -108,7 +108,7 @@
 
     <button class="accordion-header" aria-expanded="false">
     My Work
-    <span class="accordion-icon">+</span>
+    <span class="accordion-icon">›</span>
     </button>
 
     <div class="accordion-content">
@@ -271,7 +271,6 @@
 
       header.setAttribute("aria-expanded", !expanded);
       content.style.maxHeight = expanded ? null : content.scrollHeight + "px";
-      header.querySelector(".accordion-icon").textContent = expanded ? "+" : "–";
     });
   });
 </script>
