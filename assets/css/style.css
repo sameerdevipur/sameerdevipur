@@ -209,3 +209,22 @@ p:last-child {
   overflow: hidden;
   transition: max-height 0.4s ease;
 }
+
+/* --- FIX accordion collapse --- */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+  transition: max-height 0.4s ease, padding 0.25s ease;
+}
+
+/* Stop margin collapse */
+.accordion-content > *:first-child {
+  margin-top: 0;
+}
+
+/* Only add vertical padding when open */
+.accordion-header[aria-expanded="true"] + .accordion-content {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
