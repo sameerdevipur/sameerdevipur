@@ -105,6 +105,15 @@
   <main>
     <h1>My Work</h1>
 
+    <section class="accordion">
+
+    <button class="accordion-header" aria-expanded="false">
+    My Work
+    <span class="accordion-icon">+</span>
+    </button>
+
+    <div class="accordion-content">
+
     <p>
       My work sits at the uncomfortable but fascinating edge where energy
       storage stops behaving politely. I am a PhD student in Physics
@@ -251,7 +260,22 @@
       help ensure they fail less often, and when they do fail, that we
       understand exactly why.
     </p>
+    </div>
+    </section>
   </main>
+  
+<script>
+  document.querySelectorAll(".accordion-header").forEach(header => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+      const expanded = header.getAttribute("aria-expanded") === "true";
 
+      header.setAttribute("aria-expanded", !expanded);
+      content.style.maxHeight = expanded ? null : content.scrollHeight + "px";
+      header.querySelector(".accordion-icon").textContent = expanded ? "+" : "–";
+    });
+  });
+</script>
+  
 </body>
 </html>
