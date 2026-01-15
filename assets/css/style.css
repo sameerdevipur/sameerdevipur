@@ -1,4 +1,17 @@
-:root {
+:root
+[data-theme="dark"] {
+  --bg: #0b1020;
+  --surface: #111827;
+
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+  --text-light: #c7cbd1;
+
+  --accent: #818cf8;
+  --accent-2: #22d3ee;
+  --accent-soft: #1e293b;
+}
+{
   --bg: #fbf9f4;
   --surface: #f8fafc;
 
