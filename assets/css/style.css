@@ -79,6 +79,20 @@ nav a:hover {
   opacity: 0.85;
 }
 
+#theme-toggle {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 4px 6px;
+  margin-left: auto;
+}
+
+#theme-toggle:hover {
+  color: var(--accent);
+}
+
 /* ---------- MAIN ---------- */
 
 main {
