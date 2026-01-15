@@ -1,17 +1,9 @@
-:root
-[data-theme="dark"] {
-  --bg: #0b1020;
-  --surface: #111827;
+/* =========================================================
+   THEME VARIABLES
+   ========================================================= */
 
-  --text-main: #e5e7eb;
-  --text-muted: #9ca3af;
-  --text-light: #c7cbd1;
-
-  --accent: #818cf8;
-  --accent-2: #22d3ee;
-  --accent-soft: #1e293b;
-}
-{
+/* Light theme (default) */
+:root {
   --bg: #fbf9f4;
   --surface: #f8fafc;
 
@@ -26,6 +18,24 @@
   --max-width: 720px;
 }
 
+/* Dark theme */
+[data-theme="dark"] {
+  --bg: #0b1020;
+  --surface: #111827;
+
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+  --text-light: #c7cbd1;
+
+  --accent: #818cf8;
+  --accent-2: #22d3ee;
+  --accent-soft: #1e293b;
+}
+
+/* =========================================================
+   GLOBAL BASE STYLES
+   ========================================================= */
+
 body {
   margin: 0;
   background: var(--bg);
@@ -34,7 +44,9 @@ body {
   line-height: 1.7;
 }
 
-/* ---------- HEADER ---------- */
+/* =========================================================
+   HEADER & NAVIGATION
+   ========================================================= */
 
 header {
   max-width: var(--max-width);
@@ -63,6 +75,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
+  align-items: center;
 }
 
 nav a {
@@ -70,8 +83,7 @@ nav a {
   color: var(--text-light);
   font-size: 0.9rem;
   padding: 4px 2px;
-  position: relative;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, opacity 0.2s ease;
 }
 
 nav a:hover {
@@ -79,21 +91,25 @@ nav a:hover {
   opacity: 0.85;
 }
 
+/* Theme toggle button */
+
 #theme-toggle {
+  margin-left: auto;
   background: none;
   border: none;
   color: var(--text-light);
   font-size: 0.95rem;
   cursor: pointer;
   padding: 4px 6px;
-  margin-left: auto;
 }
 
 #theme-toggle:hover {
   color: var(--accent);
 }
 
-/* ---------- MAIN ---------- */
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
 
 main {
   max-width: var(--max-width);
@@ -129,7 +145,9 @@ p:last-child {
   margin-bottom: 0;
 }
 
-/* ---------- PROFILE IMAGE ---------- */
+/* =========================================================
+   PROFILE IMAGE
+   ========================================================= */
 
 .profile-pic {
   display: block;
@@ -149,7 +167,9 @@ p:last-child {
   }
 }
 
-/* ---------- AMBIENT FLAG LAYER ---------- */
+/* =========================================================
+   AMBIENT FLAGS
+   ========================================================= */
 
 .ambient-flags {
   position: fixed;
@@ -161,31 +181,29 @@ p:last-child {
 .ambient-flag {
   position: absolute;
   font-size: 1.4rem;
-  opacity: 1;
-  filter: none;
   transform: rotate(-6deg);
-  .f1, .f6, .f9  { opacity: 0.9; }
-  .f3, .f7, .f10 { opacity: 0.75; }
-  .f5, .f11      { opacity: 0.65; }
 }
 
-/* ---------- RANDOMIZED PLACEMENT ---------- */
+/* Opacity variations */
+.f1, .f6, .f9  { opacity: 0.9; }
+.f3, .f7, .f10 { opacity: 0.75; }
+.f5, .f11      { opacity: 0.65; }
 
-/* Left gutter */
+/* Placement: left */
 .f1  { top: 14%; left: 3%;  transform: rotate(-8deg) scale(0.95); }
 .f3  { top: 41%; left: 7%;  transform: rotate(5deg)  scale(1.05); }
 .f5  { top: 59%; left: 5%;  transform: rotate(-3deg) scale(0.9); }
 .f7  { top: 77%; left: 11%; transform: rotate(7deg)  scale(1); }
 .f9  { top: 91%; left: 4%;  transform: rotate(-6deg) scale(0.85); }
 
-/* Right gutter */
+/* Placement: right */
 .f2  { top: 19%; right: 5%; transform: rotate(4deg)  scale(1); }
 .f4  { top: 33%; right: 8%; transform: rotate(-9deg) scale(0.95); }
 .f6  { top: 54%; right: 6%; transform: rotate(6deg)  scale(1.1); }
 .f8  { top: 71%; right: 9%; transform: rotate(-2deg) scale(0.9); }
 .f10 { top: 83%; right: 3%; transform: rotate(8deg)  scale(1); }
 
-/* Corner accent */
+/* Corner */
 .f11 { top: 9%; right: 2%; transform: rotate(-12deg) scale(0.85); }
 
 @media (max-width: 700px) {
@@ -193,6 +211,10 @@ p:last-child {
     display: none;
   }
 }
+
+/* =========================================================
+   ACCORDION
+   ========================================================= */
 
 .accordion {
   margin-top: 2rem;
@@ -223,7 +245,6 @@ p:last-child {
 .accordion-icon {
   font-size: 1.4rem;
   line-height: 1;
-  transform: rotate(0deg);
   transition: transform 0.25s ease;
 }
 
@@ -234,23 +255,14 @@ p:last-child {
 .accordion-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease;
-}
-
-/* --- FIX accordion collapse --- */
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
   padding: 0 1rem;
   transition: max-height 0.4s ease, padding 0.25s ease;
 }
 
-/* Stop margin collapse */
 .accordion-content > *:first-child {
   margin-top: 0;
 }
 
-/* Only add vertical padding when open */
 .accordion-header[aria-expanded="true"] + .accordion-content {
   padding-top: 1rem;
   padding-bottom: 1rem;
