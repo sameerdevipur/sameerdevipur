@@ -99,8 +99,6 @@ nav a:hover {
   opacity: 0.85;
 }
 
-/* Theme toggle button */
-
 #theme-toggle {
   margin-left: auto;
   background: none;
@@ -176,7 +174,7 @@ p:last-child {
 }
 
 /* =========================================================
-   AMBIENT FLAGS
+   AMBIENT FLAGS (WINDOWS-SAFE)
    ========================================================= */
 
 .ambient-flags {
@@ -188,13 +186,16 @@ p:last-child {
 
 .ambient-flag {
   position: absolute;
+}
+
+/* Emoji glyph isolation */
+.ambient-flag span {
+  display: inline-block;
   font-size: 1.4rem;
-  transform: rotate(-6deg);
   font-family:
     "Segoe UI Emoji",
     "Apple Color Emoji",
-    "Noto Color Emoji",
-    system-ui;
+    "Noto Color Emoji";
 }
 
 /* Opacity variations */
