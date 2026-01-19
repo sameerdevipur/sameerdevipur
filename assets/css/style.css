@@ -39,7 +39,15 @@
 body {
   margin: 0;
   background: var(--bg);
-  font-family: "Inter", system-ui, sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    "Segoe UI Emoji",
+    "Apple Color Emoji",
+    "Noto Color Emoji",
+    sans-serif;
   color: var(--text-main);
   line-height: 1.7;
 }
@@ -182,6 +190,11 @@ p:last-child {
   position: absolute;
   font-size: 1.4rem;
   transform: rotate(-6deg);
+  font-family:
+    "Segoe UI Emoji",
+    "Apple Color Emoji",
+    "Noto Color Emoji",
+    system-ui;
 }
 
 /* Opacity variations */
