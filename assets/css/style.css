@@ -114,12 +114,12 @@ nav a:hover {
 }
 
 /* =========================================================
-   MAIN CONTENT
+   MAIN CONTENT (ARTICLE LAYOUT)
    ========================================================= */
 
 main {
   max-width: var(--max-width);
-  margin: 12vh auto;
+  margin: 10vh auto;
   padding: 0 24px;
   position: relative;
   z-index: 1;
@@ -129,7 +129,7 @@ h1 {
   font-size: clamp(2.2rem, 4vw, 3rem);
   font-weight: 500;
   letter-spacing: -0.03em;
-  margin-bottom: 2rem;
+  margin-bottom: 2.2rem;
 
   background: linear-gradient(
     90deg,
@@ -147,8 +147,44 @@ p {
   margin-bottom: 1.4rem;
 }
 
+p em {
+  color: var(--text-main);
+  font-style: italic;
+}
+
 p:last-child {
   margin-bottom: 0;
+}
+
+/* =========================================================
+   FIGURES & IMAGES
+   ========================================================= */
+
+figure {
+  margin: 2.6rem 0 2.2rem;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: var(--surface);
+  border: 1px solid var(--accent-soft);
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-top: 0.6rem;
+  max-width: 64ch;
+}
+
+.citation {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-top: 0.4rem;
+  max-width: 64ch;
+  opacity: 0.85;
 }
 
 /* =========================================================
@@ -188,7 +224,6 @@ p:last-child {
   position: absolute;
 }
 
-/* Emoji glyph isolation */
 .ambient-flag span {
   display: inline-block;
   font-size: 1.4rem;
@@ -198,26 +233,22 @@ p:last-child {
     "Noto Color Emoji";
 }
 
-/* Opacity variations */
 .f1, .f6, .f9  { opacity: 0.9; }
 .f3, .f7, .f10 { opacity: 0.75; }
 .f5, .f11      { opacity: 0.65; }
 
-/* Placement: left */
 .f1  { top: 14%; left: 3%;  transform: rotate(-8deg) scale(0.95); }
 .f3  { top: 41%; left: 7%;  transform: rotate(5deg)  scale(1.05); }
 .f5  { top: 59%; left: 5%;  transform: rotate(-3deg) scale(0.9); }
 .f7  { top: 77%; left: 11%; transform: rotate(7deg)  scale(1); }
 .f9  { top: 91%; left: 4%;  transform: rotate(-6deg) scale(0.85); }
 
-/* Placement: right */
 .f2  { top: 19%; right: 5%; transform: rotate(4deg)  scale(1); }
 .f4  { top: 33%; right: 8%; transform: rotate(-9deg) scale(0.95); }
 .f6  { top: 54%; right: 6%; transform: rotate(6deg)  scale(1.1); }
 .f8  { top: 71%; right: 9%; transform: rotate(-2deg) scale(0.9); }
 .f10 { top: 83%; right: 3%; transform: rotate(8deg)  scale(1); }
 
-/* Corner */
 .f11 { top: 9%; right: 2%; transform: rotate(-12deg) scale(0.85); }
 
 @media (max-width: 700px) {
@@ -227,57 +258,8 @@ p:last-child {
 }
 
 /* =========================================================
-   ACCORDION
+   REMOVED COMPONENTS
    ========================================================= */
 
-.accordion {
-  margin-top: 2rem;
-}
-
-.accordion-header {
-  width: 100%;
-  background: none;
-  border: 1px solid #e5e7eb;
-  border-radius: 6px;
-  padding: 0.9rem 1rem;
-  font-family: inherit;
-  font-size: 1.05rem;
-  font-weight: 500;
-  color: var(--text-main);
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  transition: border-color 0.2s ease;
-}
-
-.accordion-header[aria-expanded="true"] {
-  border-color: transparent;
-}
-
-.accordion-icon {
-  font-size: 1.4rem;
-  line-height: 1;
-  transition: transform 0.25s ease;
-}
-
-.accordion-header[aria-expanded="true"] .accordion-icon {
-  transform: rotate(90deg);
-}
-
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  padding: 0 1rem;
-  transition: max-height 0.4s ease, padding 0.25s ease;
-}
-
-.accordion-content > *:first-child {
-  margin-top: 0;
-}
-
-.accordion-header[aria-expanded="true"] + .accordion-content {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
+/* Accordion styles intentionally removed.
+   Safe to delete related HTML and JS. */
