@@ -330,6 +330,40 @@ figcaption {
   color: var(--text-main);
 }
 
+/* Expandable card */
+
+.expand-toggle {
+  display: none;
+}
+
+.expand-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.expand-toggle:checked ~ .expand-content {
+  max-height: 1200px;
+  margin-top: 0.8rem;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: var(--accent);
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.read-more:hover {
+  opacity: 0.7;
+}
+
+.expand-toggle:checked ~ .read-more {
+  display: none;
+}
+
 /* =========================================================
    REMOVED COMPONENTS
    ========================================================= */
