@@ -45,7 +45,7 @@
 
     <div class="thinking-grid">
 
-      <!-- Red Dead Redemption 2 -->
+      <!-- RDR2 -->
 
       <article class="thinking-card">
 
@@ -81,7 +81,7 @@
       </article>
 
 
-      <!-- Assassin's Creed Series -->
+      <!-- Assassin's Creed -->
 
       <article class="thinking-card">
 
@@ -130,58 +130,107 @@
 
       </article>
 
-<!-- Far Cry Series -->
-      
-    <article class="thinking-card">
 
-      <h3>Far Cry Series</h3>
-      <p class="game-meta">
-        Open-world systems · First person shooter · Villain-driven narratives
-      </p>
+      <!-- Far Cry -->
 
-      <p>
-        If you want amazing reload animations and sounds, this is the game.
-        Far Cry 3 has one of the most adernaline filled missions with the song
-        "Make it bun dem" featuring Damian Marley and Skrillex. That's what got me
-        hooked into this series. In Far Cry 6, the very famous Giancarlo Esposito
-        takes up the role as Antón Castillo, the main antagonist of the game and
-        he has done a phenomenal job there.
-      </p>
-      
-     <div class="expand-content">
-      
-      <p>
-        The antagonists often overshadow the protagonist. It's a unique and risky 
-        approach but it has worked so far for them. Far Cry 6 showed signs of losing
-        its grip on the gameplay but Giancarlo carried the game by his acting. Hopefully
-        they'll pick up after this, if they make any.
-      </p>
+      <article class="thinking-card">
 
-      <p class="mechanic">
-        <strong>Mechanic worth stealing:</strong>
-        Go wild and crazy.
-      </p>
+        <h3>Far Cry Series</h3>
+        <p class="game-meta">
+          Open-world systems · Emergent chaos · Villain-driven narratives
+        </p>
 
-    </div>
+        <p>
+          A sandbox built on instability. Fire spreads, animals interfere, enemies
+          patrol dynamically. The world is less scripted drama and more volatile interaction.
+        </p>
 
-    <button class="read-more-btn">Read more</button>
+        <div class="expand-content">
 
-  </article>
-    
+          <p>
+            At its strongest, the series turns simple mechanics into emergent outcomes.
+            A stealth plan can collapse into chaos. A single action can cascade into
+            unpredictable consequences.
+          </p>
+
+          <p class="mechanic">
+            <strong>Mechanic worth stealing:</strong>
+            Design systems that interact and produce unexpected results.
+          </p>
+
+        </div>
+
+        <button class="read-more-btn">Read more</button>
+
+      </article>
+
+
+      <!-- Ghost of Tsushima / Yōtei -->
+
+      <article class="thinking-card">
+
+        <h3>Ghost of Tsushima / Ghost of Yōtei</h3>
+        <p class="game-meta">
+          Visual direction · Minimal UI · Cinematic experience · Honour systems
+        </p>
+
+        <p>
+          A study in restraint and immersion. The interface fades into the world,
+          letting environment and motion guide experience.
+        </p>
+
+        <div class="expand-content">
+
+          <p>
+            The whole question about "honour". Set in the historical Mongol invasion of Japan.
+            This period is when the word <em>kamikaze</em> was coined that we use even today.
+          </p>
+
+          <p>
+            <em>Kamikaze</em> translates to "divine wind" and refers to the typhoons that destroyed
+            Mongol fleets in the 13th century, protecting Japan. The term later evolved in meaning,
+            but its origin is rooted in this moment.
+          </p>
+
+          <p>
+            10/10 graphics, 10/10 music, 10/10 gameplay. It was like playing a samurai movie,
+            especially when you unlock the Ghost stance and start cutting everyone down,
+            you feel like the main character.
+          </p>
+
+          <p>
+            Ghost of Yōtei: The fan-pleasing sequel which is equally good. Maybe they could've
+            done better with getting in touch with people's emotions like GOT but still,
+            an amazing game.
+          </p>
+
+          <p class="mechanic">
+            <strong>Mechanic worth stealing:</strong>
+            Replace UI with environmental guidance and cinematic framing.
+          </p>
+
+        </div>
+
+        <button class="read-more-btn">Read more</button>
+
+      </article>
+
     </div>
   </section>
 
 </main>
 
 <script>
+document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll('.read-more-btn').forEach(button => {
-    button.addEventListener('click', () => {
-      const card = button.closest('.thinking-card');
+    button.addEventListener('click', function () {
+      const card = this.closest('.thinking-card');
       card.classList.toggle('expanded');
-      button.textContent =
+      this.textContent =
         card.classList.contains('expanded') ? 'Read less' : 'Read more';
     });
   });
+});
 </script>
 
 </body>
