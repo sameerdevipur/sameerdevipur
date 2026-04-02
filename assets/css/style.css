@@ -344,3 +344,30 @@ figcaption {
 [data-theme="dark"] .thinking-card:hover {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
 }
+
+.expand-content {
+  display: none;
+  margin-top: 0.8rem;
+}
+
+.thinking-card.expanded .expand-content {
+  display: block;
+}
+
+.read-more-btn {
+  margin-top: 1rem;
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.read-more-btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
