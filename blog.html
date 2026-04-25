@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-<script>
+  <script>
   (function() {
     var theme = localStorage.getItem('theme');
     if (theme) {
@@ -12,7 +11,6 @@
     }
   })();
 </script>
-
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -20,66 +18,104 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-MBDZ4VKH');</script>
 <!-- End Google Tag Manager -->
-  
+
   <meta charset="UTF-8">
   <title>Blog — Sameer Devipur</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="assets/css/style.css">
-
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
   <script src="assets/js/include.js" defer></script>
+
+  <style>
+    .blog-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 2rem;
+    }
+
+    .blog-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      padding: 0.65rem 1.1rem;
+      border: 1px solid var(--border, #e0e0e0);
+      border-radius: 8px;
+      text-decoration: none;
+      color: inherit;
+      background: var(--card-bg, transparent);
+      transition: background 0.15s ease, border-color 0.15s ease;
+      max-width: 260px;
+    }
+
+    .blog-card:hover {
+      background: var(--hover-bg, rgba(0, 0, 0, 0.04));
+      border-color: var(--border-hover, #aaa);
+    }
+
+    .blog-card-title {
+      font-size: 0.95rem;
+      font-weight: 500;
+      line-height: 1.3;
+    }
+
+    .blog-card-date {
+      font-size: 0.75rem;
+      opacity: 0.55;
+      font-weight: 400;
+    }
+  </style>
 </head>
-
 <body>
-
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBDZ4VKH"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-  
-  <header id="site-header"></header>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBDZ4VKH"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
+  <header id="site-header"></header>
   <main>
     <h1>Blog</h1>
-
     <p>
       I used to write short articles and fun stories on
       <a href="https://thedopplerdude.blogspot.com"
-         target="_blank" rel="noopener noreferrer">
-        thedopplerdude.blogspot.com
-      </a>,
+         target="_blank" rel="noopener noreferrer">thedopplerdude.blogspot.com</a>,
       which started as a team writing experiment with a couple of friends
       and slowly turned into a place for ideas that did not quite fit
       anywhere else.
     </p>
-    
     <p>
       Some of the articles written by me on that blog have been copied and
       archived here, along with their original publication dates. For the
       complete collection and to read excellent pieces by Anagha and Rohan,
       visiting the original blog is strongly recommended.
     </p>
-
     <p>
       At the moment, this page is in a quiet phase, thanks to me going
-      through a writer’s block. The intention, however, is still very
+      through a writer's block. The intention, however, is still very
       much alive.
     </p>
-
     <p>
       Someday this space will fill up again with unfiltered thoughts,
       half-formed ideas, and observations that feel worth writing down,
       even if they are not fully polished.
     </p>
-  </main>
 
+    <div class="blog-grid">
+      <a href="blog/what-is-time.html" class="blog-card">
+        <span class="blog-card-title">What Is Time?</span>
+        <span class="blog-card-date">Originally posted: [date]</span>
+      </a>
+      <!-- Add more posts below in the same format:
+      <a href="blog/your-post-slug.html" class="blog-card">
+        <span class="blog-card-title">Post Title Here</span>
+        <span class="blog-card-date">Originally posted: Month DD, YYYY</span>
+      </a>
+      -->
+    </div>
+  </main>
 </body>
 </html>
-
-
