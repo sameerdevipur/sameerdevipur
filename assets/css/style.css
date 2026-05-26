@@ -386,3 +386,9 @@ figcaption {
   color: var(--accent);
   opacity: 0.9;
 }
+
+.category-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
