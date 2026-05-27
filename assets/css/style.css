@@ -64,6 +64,7 @@ header {
   position: relative;
 }
 
+/* Gradient line under the header */
 header::after {
   content: "";
   position: absolute;
@@ -99,6 +100,7 @@ nav a:hover {
   opacity: 0.85;
 }
 
+/* Theme toggle button styling */
 #theme-toggle {
   margin-left: auto;
   background: none;
@@ -125,6 +127,7 @@ main {
   z-index: 1;
 }
 
+/* Gradient text effect for main headings */
 h1 {
   font-size: clamp(2.2rem, 4vw, 3rem);
   font-weight: 500;
@@ -208,51 +211,6 @@ figcaption {
     height: 112px;
   }
 }
-
-/* =========================================================
-   AMBIENT FLAGS
-   =========================================================
-
-.ambient-flags {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.ambient-flag {
-  position: absolute;
-}
-
-.ambient-flag span {
-  display: inline-block;
-  font-size: 1.4rem;
-}
-
-.f1, .f6, .f9  { opacity: 0.9; }
-.f3, .f7, .f10 { opacity: 0.75; }
-.f5, .f11      { opacity: 0.65; }
-
-.f1  { top: 14%; left: 3%; }
-.f3  { top: 41%; left: 7%; }
-.f5  { top: 59%; left: 5%; }
-.f7  { top: 77%; left: 11%; }
-.f9  { top: 91%; left: 4%; }
-
-.f2  { top: 19%; right: 5%; }
-.f4  { top: 33%; right: 8%; }
-.f6  { top: 54%; right: 6%; }
-.f8  { top: 71%; right: 9%; }
-.f10 { top: 83%; right: 3%; }
-
-.f11 { top: 9%; right: 2%; }
-
-@media (max-width: 700px) {
-  .ambient-flags {
-    display: none;
-  }
-}
-*/
 
 /* =========================================================
    TRAVEL PAGE – COUNTRY GRID
