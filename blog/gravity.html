@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script>
-  (function() {
-    var theme = localStorage.getItem('theme');
-    if (theme) {
-      document.documentElement.setAttribute('data-theme', theme);
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    }
-  })();
-</script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MBDZ4VKH');</script>
-<!-- End Google Tag Manager -->
 
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MBDZ4VKH');
+  </script>
   <meta charset="UTF-8">
-  <title>Gravity</title>
+  <title>Gravity — Sameer Devipur</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <link rel="stylesheet" href="../assets/css/style.css">
-  <!-- Font -->
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
   <script src="../assets/js/include.js" defer></script>
-</head>
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBDZ4VKH"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
+</head>
+
+<body>
+
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBDZ4VKH"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
   <header id="site-header"></header>
+
   <main>
-    <p><a href="../blog.html">← Back</a></p>
+    <a href="../blog.html" class="back-link">← Back to Blog</a>
+    
     <h1>Gravity</h1>
 
     <p>
@@ -78,7 +85,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       force caused by matter due to its mass. It is the weakest force in nature and exists between
       all bodies in the universe. This concept was so ahead of its time that, with minimal flaws, it
       was accepted and is still in use. Newtonian gravity holds up well in practical and classical
-      mechanics. However, when it comes to the cosmos, the picture breaks down. The theory does not
+      mechanic. However, when it comes to the cosmos, the picture breaks down. The theory does not
       account for black holes or other complicated cosmic phenomena. But why should mass give rise to
       a universal attractive force? There must be a reason.
     </p>
@@ -134,6 +141,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <a href="https://thedopplerdude.blogspot.com" target="_blank" rel="noopener noreferrer">
       thedopplerdude.blogspot.com</a>.</em>
     </p>
+
   </main>
+
 </body>
 </html>
