@@ -350,3 +350,60 @@ figcaption {
   color: inherit;
   display: block;
 }
+
+/* =========================================================
+   WORK PAGE – FEATURED & 2-COLUMN GRID LAYOUT
+   ========================================================= */
+
+.featured-card {
+  padding: 2.4rem;
+  border-radius: 12px;
+  background: var(--surface);
+  border: 1px solid var(--accent-soft);
+  margin-bottom: 3rem;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.featured-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+[data-theme="dark"] .featured-card:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+}
+
+.featured-card h1 {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+.featured-card .expand-content {
+  display: none;
+  margin-top: 1.6rem;
+}
+
+.featured-card.expanded .expand-content {
+  display: block;
+}
+
+/* Aligns the Read More button to the bottom right */
+.read-more-align-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.2rem;
+}
+
+/* Forces exactly 2 columns for the smaller boxes */
+.two-col-grid {
+  display: grid;
+  gap: 1.6rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Drops down to 1 column on phones */
+@media (max-width: 650px) {
+  .two-col-grid {
+    grid-template-columns: 1fr;
+  }
+}
