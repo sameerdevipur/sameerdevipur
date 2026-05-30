@@ -3,24 +3,23 @@
 <head>
 
   <script>
-  (function() {
-    var theme = localStorage.getItem('theme');
-    if (theme) {
-      document.documentElement.setAttribute('data-theme', theme);
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    }
-  })();
-</script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MBDZ4VKH');</script>
-<!-- End Google Tag Manager -->
-
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MBDZ4VKH');
+  </script>
   <meta charset="UTF-8">
   <title>My Work — Sameer Devipur</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,141 +27,127 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <script src="assets/js/include.js" defer></script>
 </head>
 
 <body>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBDZ4VKH"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-  
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBDZ4VKH"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
   <header id="site-header"></header>
 
-  <main class="content">
+  <main>
 
-    <h1>My Work</h1>
+    <article class="featured-card">
+      <h1>My Work</h1>
+      
+      <p>
+        My work sits at the uncomfortable but fascinating edge where energy
+        storage stops behaving politely. I am a PhD student in Physics working
+        on thermal runaway in lithium-ion batteries, a failure process in which
+        a battery transitions from a controlled electrochemical device into a
+        rapidly evolving chemical reactor.
+      </p>
 
-    <p>
-      My work sits at the uncomfortable but fascinating edge where energy
-      storage stops behaving politely. I am a PhD student in Physics working
-      on thermal runaway in lithium-ion batteries, a failure process in which
-      a battery transitions from a controlled electrochemical device into a
-      rapidly evolving chemical reactor.
-    </p>
+      <div class="expand-content">
+        <p>
+          Once initiated, thermal runaway is fast, violent, and unforgiving.
+          Temperature rises within seconds, gases are released, materials
+          decompose, and the system quickly outruns any simple safety mechanism.
+          Understanding this process in detail is no longer optional. It is a
+          prerequisite for <em>safe electrification</em>.
+        </p>
 
-    <p>
-      Once initiated, thermal runaway is fast, violent, and unforgiving.
-      Temperature rises within seconds, gases are released, materials
-      decompose, and the system quickly outruns any simple safety mechanism.
-      Understanding this process in detail is no longer optional. It is a
-      prerequisite for <em>safe electrification</em>.
-    </p>
+        <figure>
+          <img src="assets/images/thermal-runaway-abuse.png" alt="Abuse scenarios leading to thermal runaway in lithium-ion batteries">
+          <figcaption>
+            Typical mechanical, electrical, and thermal abuse pathways that can
+            initiate thermal runaway in lithium-ion cells.
+          </figcaption>
+          <div class="citation">
+            Yixin Dai, Aidin Panahi, <em>Thermal runaway process in lithium-ion batteries: A review</em>, Next Energy, 2025.
+          </div>
+        </figure>
 
-    <figure>
-      <img
-        src="assets/images/thermal-runaway-abuse.png"
-        alt="Abuse scenarios leading to thermal runaway in lithium-ion batteries">
-      <figcaption>
-        Typical mechanical, electrical, and thermal abuse pathways that can
-        initiate thermal runaway in lithium-ion cells.
-      </figcaption>
-      <div class="citation">
-        Yixin Dai, Aidin Panahi,
-        <em>Thermal runaway process in lithium-ion batteries: A review</em>,
-        Next Energy, 2025.
-        https://doi.org/10.1016/j.nxener.2024.100186
+        <p>
+          At a high level, thermal runaway begins when heat generation inside
+          a cell exceeds its ability to dissipate that heat. The trigger can be
+          mechanical abuse, electrical abuse, or external heating. Internally,
+          it unfolds as a cascade.
+        </p>
+
+        <p>
+          I use laser-based diagnostics to observe thermal runaway as it unfolds,
+          in real time, without physical contact. Lasers allow remote, selective,
+          and extremely fast interrogation of matter. At the core of this approach is <em>spectroscopy</em>. 
+          Performed fast enough, this yields time-resolved chemistry, not merely an outcome.
+        </p>
+
+        <figure>
+          <img src="assets/images/spectroscopy-energy-levels.png" alt="Energy level diagram illustrating absorption and emission spectroscopy">
+          <figcaption>
+            Simplified schematic of absorption and emission processes used in laser-based spectroscopic diagnostics.
+          </figcaption>
+        </figure>
+
+        <p>
+          In short, I am trying to turn a catastrophic event into a measurable,
+          understandable, and ultimately manageable phenomenon.
+        </p>
       </div>
-    </figure>
 
-    <p>
-      At a high level, thermal runaway begins when heat generation inside
-      a cell exceeds its ability to dissipate that heat. The trigger can be
-      mechanical abuse, electrical abuse, or external heating. Internally,
-      it unfolds as a cascade.
-    </p>
+      <div class="read-more-align-right">
+        <button class="read-more-btn">Read more</button>
+      </div>
+    </article>
 
-    <p>
-      Each step releases additional heat, accelerating the next. The system
-      feeds on itself. By the time flames or venting are visible, the most
-      important chemistry has already occurred.
-    </p>
 
-    <p>
-      Current research has mapped many pieces of this puzzle, but not the
-      full picture. Individual reaction pathways are well understood in
-      isolation. Models for heat generation under normal operation are solid.
-      Onset temperatures for specific decomposition mechanisms are known.
-    </p>
+    <section>
+      <h2 style="margin-bottom: 1.6rem;">Other Projects</h2>
 
-    <p>
-      What remains difficult is connecting these pieces into a single,
-      time-resolved description of a real thermal runaway event. Most
-      measurements are indirect. Most diagnostics integrate over time. Many
-      experiments stop just before things become truly interesting.
-    </p>
+      <div class="two-col-grid">
 
-    <p><em>This is where my work comes in.</em></p>
+        <article class="thinking-card">
+          <h3>Project Alpha</h3>
+          <p class="game-meta">Keywords · Topic Area · 2025</p>
+          <div class="expand-content">
+            <p>Details about this specific project go here.</p>
+          </div>
+          <button class="read-more-btn">Read more</button>
+        </article>
 
-    <p>
-      I use laser-based diagnostics to observe thermal runaway as it unfolds,
-      in real time, without physical contact. Lasers allow remote, selective,
-      and extremely fast interrogation of matter.
-    </p>
+        <article class="thinking-card">
+          <h3>Project Beta</h3>
+          <p class="game-meta">Keywords · Topic Area · 2024</p>
+          <div class="expand-content">
+            <p>Details about this specific project go here.</p>
+          </div>
+          <button class="read-more-btn">Read more</button>
+        </article>
 
-    <p>
-      At the core of this approach is <em>spectroscopy</em>. Molecules interact
-      with light in specific ways. Each molecule absorbs or emits light at
-      characteristic wavelengths that act as fingerprints.
-    </p>
-
-    <p>
-      Performed fast enough, this yields time-resolved chemistry, not merely
-      an outcome.
-    </p>
-
-    <figure>
-      <img
-        src="assets/images/spectroscopy-energy-levels.png"
-        alt="Energy level diagram illustrating absorption and emission spectroscopy">
-      <figcaption>
-        Simplified schematic of absorption and emission processes used in
-        laser-based spectroscopic diagnostics.
-      </figcaption>
-    </figure>
-
-    <p>
-      Different spectroscopic techniques emphasize different aspects of the
-      problem. Absorption spectroscopy tracks toxic and flammable gases as
-      they form and disappear.
-    </p>
-
-    <p>
-      Together, these tools allow reconstruction of the chemical narrative
-      of thermal runaway, frame by frame. The challenge is not only experimental.
-      Thermal runaway is a transient, multi-physics event involving heat transfer,
-      fluid dynamics, chemical kinetics, and materials failure simultaneously.
-      A significant part of my work involves extracting meaning from this
-      complexity and translating it into models that are both physically
-      grounded and practically useful. The end goal is not merely to describe 
-      thermal runaway, but to model it as a complete process.
-    </p>
-
-    <p>
-      In short, I am trying to turn a catastrophic event into a measurable,
-      understandable, and ultimately manageable phenomenon.
-    </p>
+        </div>
+    </section>
 
   </main>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll('.read-more-btn').forEach(button => {
+        button.addEventListener('click', function () {
+          // Finds the closest card, whether it is the large featured one or a small grid one
+          const card = this.closest('.featured-card, .thinking-card');
+          card.classList.toggle('expanded');
+          this.textContent = card.classList.contains('expanded') ? 'Read less' : 'Read more';
+        });
+      });
+    });
+  </script>
+
 </body>
 </html>
-
