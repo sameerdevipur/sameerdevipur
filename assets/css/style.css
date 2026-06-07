@@ -133,14 +133,7 @@ h1 {
   font-weight: 500;
   letter-spacing: -0.03em;
   margin-bottom: 2.2rem;
-
-  background: linear-gradient(
-    90deg,
-    var(--text-main),
-    var(--accent)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text-main);
 }
 
 p {
