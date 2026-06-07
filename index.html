@@ -3,24 +3,23 @@
 <head>
 
   <script>
-  (function() {
-    var theme = localStorage.getItem('theme');
-    if (theme) {
-      document.documentElement.setAttribute('data-theme', theme);
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    }
-  })();
-</script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MBDZ4VKH');</script>
-<!-- End Google Tag Manager -->
-  
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MBDZ4VKH');
+  </script>
   <meta charset="UTF-8">
   <title>Sameer Devipur</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,39 +27,59 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <script src="assets/js/include.js" defer></script>
+
 </head>
 
 <body>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBDZ4VKH"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-  
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBDZ4VKH"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
   <header id="site-header"></header>
 
   <main>
-    <img
-      src="assets/images/DP.jpeg"
-      alt="Sameer Devipur"
-      class="profile-pic">
+    <img src="assets/images/DP.jpeg" alt="Sameer Devipur" class="profile-pic">
 
     <h1>Hi, I’m Sameer.</h1>
 
     <p>
       Welcome to my website. This is a small collection of things that I find worth
       sharing, ranging from my work in Science and Energy Research to notes,
-      experiments, games, and ideas that refuse to stay in my head. You will
-      find snapshots of what I am working on, informal writing, progress logs,
-      a few fun facts, and a few snaps that shows the world I see through my
-      eyes. Nothing here is meant to be definitive. It is a record of learning,
-      tinkering, and occasionally getting things right for the wrong reasons.
+      experiments, games, and ideas that refuse to stay in my head.
+    </p>
+
+    <p>
+      I see myself as someone who is constantly curious and mildly allergic to simple answers. 
+      Professionally, I am a PhD student in Physics working on Battery Safety and Energy Systems, 
+      which mostly means poking complex systems until they reveal how they behave. My academic 
+      background is in Chemical Engineering, so I tend to think in terms of processes, materials, 
+      and why things fail in interesting ways. 
+    </p>
+
+    <p>
+      In my free time, I track game progress, write notes that may or may not turn into proper 
+      ideas, take photos of things that catch my eye, and collect fun facts that serve no immediate 
+      purpose but feel important anyway. You will find snapshots of what I am working on, informal 
+      writing, progress logs, and a few snaps that show the world I see through my eyes.
+    </p>
+
+    <p>
+      Nothing here is meant to be definitive. It is a record of learning, tinkering, and occasionally 
+      getting things right for the wrong reasons. This site is less a formal biography and more an 
+      honest snapshot of how I think, work, and occasionally overthink.
+    </p>
+
+    <p>
+      If you’re looking for a more polished version of my academic history,
+      <a href="https://www.linkedin.com/in/sameer-v-devipur/"
+         target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      has that covered.
     </p>
 
     <p>
@@ -74,5 +93,3 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </body>
 </html>
-
-
