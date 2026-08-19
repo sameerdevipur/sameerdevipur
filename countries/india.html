@@ -1,91 +1,68 @@
-<!DOCTYPE html>
+---
+title: "India — Travel Diary"
+description: "Personal reflections on India, home, movement, and everyday life by Sameer Devipur."
+root: "../"
+nav: "travel"
+og_type: "website"
+---
+<!doctype html>
 <html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND56G7GR4N"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-ND56G7GR4N');
-  </script>
+  <head>
+    {% include head.html %}
+  </head>
 
-  <script>
-    (function() {
-      var theme = localStorage.getItem('theme');
-      if (theme) {
-        document.documentElement.setAttribute('data-theme', theme);
-      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-      }
-    })();
-  </script>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <meta charset="UTF-8">
-  <title>India — Travel Diary</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <header id="site-header">
+      {% include header.html %}
+    </header>
 
-  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
-  <link rel="stylesheet" href="../assets/css/style.css">
+    <main id="main-content">
+      <a href="../travel.html" class="back-link">← Back to Travel Diary</a>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
-  <script src="../assets/js/include.js" defer></script>
+      <h1>India</h1>
 
-</head>
+      <div class="travel-content">
+        <p>
+          Well, it's my home country. What more can I say? I was born here, was raised here, was
+          shaped here (both personality-wise and physically). After moving to Sweden since 2022 and
+          a couple of visits back home, I realised that I had been living inside one of the most
+          densely packed experiments in culture, climate, and controlled chaos on the planet.
+        </p>
 
-<body>
+        <p>
+          Most of my memories orbit around Karnataka, and more specifically Bengaluru. Officially,
+          it’s the “Silicon Valley of India.” Unofficially, it’s a place where you can discuss
+          machine learning over artisanal coffee while being stuck in traffic that appears to follow
+          no known laws of fluid dynamics. The city runs on code, caffeine, and an almost
+          philosophical tolerance for unpredictability. Roads are suggestions. Weather forecasts are
+          optimistic guesses. Yet somehow, everything functions.
+        </p>
 
-  <header id="site-header"></header>
+        <p>
+          Karnataka itself is far more than the city. Step outside Bengaluru and the pace shifts.
+          You get coastline, hills, temples carved out of stone with unreasonable precision, and
+          food that quietly asserts dominance without needing explanation. There is a certain
+          engineering elegance to the cuisine here. Simple ingredients, but optimized over
+          generations. Dosa is not just breakfast, it’s a system.
+        </p>
 
-  <main>
-    <a href="../travel.html" class="back-link">← Back to Travel Diary</a>
+        <p>
+          India, as a whole, resists clean summarization. It scales in every dimension. Population,
+          languages, contradictions. You can travel a few hundred kilometers and feel like you’ve
+          crossed into a different country entirely. And yet, there is a strange coherence beneath
+          it all. A shared tolerance for complexity. An ability to operate in systems that look,
+          from the outside, completely unstable.
+        </p>
 
-    <h1>India</h1>
+        <p>
+          It’s noisy. It’s inefficient. It’s brilliant. It’s exhausting. It’s <strong>home</strong>.
+        </p>
+      </div>
+    </main>
 
-    <div class="travel-content">
-
-      <p>
-        Well, it's my home country. What more can I say? I was born here, was raised here, was shaped here
-        (both personality-wise and physically). After moving to Sweden since 2022 and a couple of visits back home,
-        I realised that I had been living inside one of the most densely packed experiments in culture, climate,
-        and controlled chaos on the planet.
-      </p>
-
-      <p>
-        Most of my memories orbit around Karnataka, and more specifically Bengaluru.
-        Officially, it’s the “Silicon Valley of India.” Unofficially, it’s a place where
-        you can discuss machine learning over artisanal coffee while being stuck in traffic
-        that appears to follow no known laws of fluid dynamics. The city runs on code,
-        caffeine, and an almost philosophical tolerance for unpredictability. Roads are
-        suggestions. Weather forecasts are optimistic guesses. Yet somehow, everything functions.
-      </p>
-
-      <p>
-        Karnataka itself is far more than the city. Step outside Bengaluru and the pace shifts.
-        You get coastline, hills, temples carved out of stone with unreasonable precision,
-        and food that quietly asserts dominance without needing explanation. There is a
-        certain engineering elegance to the cuisine here. Simple ingredients, but optimized
-        over generations. Dosa is not just breakfast, it’s a system.
-      </p>
-
-      <p>
-        India, as a whole, resists clean summarization. It scales in every dimension.
-        Population, languages, contradictions. You can travel a few hundred kilometers
-        and feel like you’ve crossed into a different country entirely. And yet, there is
-        a strange coherence beneath it all. A shared tolerance for complexity. An ability
-        to operate in systems that look, from the outside, completely unstable.
-      </p>
-
-      <p>
-        It’s noisy. It’s inefficient. It’s brilliant. It’s exhausting. It’s <strong>home</strong>.
-      </p>
-
-    </div>
-
-  </main>
-
-</body>
+    {% include footer.html %}
+    {% include consent-banner.html %}
+  </body>
 </html>

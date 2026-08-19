@@ -1,85 +1,65 @@
-<!DOCTYPE html>
+---
+title: "Side Quests — Sameer Devipur"
+description: "Games, creative experiments, and other side quests explored by Sameer Devipur beyond the laboratory."
+root: ""
+nav: "side-quests"
+og_type: "website"
+---
+<!doctype html>
 <html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND56G7GR4N"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-ND56G7GR4N');
-  </script>
+  <head>
+    {% include head.html %}
+  </head>
 
-  <meta charset="UTF-8">
-  <title>Side Quests — Sameer Devipur</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <header id="site-header">
+      {% include header.html %}
+    </header>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <main id="main-content">
+      <h1>Side quests</h1>
 
-  <script src="assets/js/include.js" defer></script>
-</head>
+      <p>
+        Research is only one part of life. Side quests are where everything else lives. Games,
+        films, music, podcasts, random rabbit holes, and the kinds of things that quietly occupy
+        attention long after the serious work is done.
+      </p>
 
-<body>
+      <p>
+        This section is less structured than the rest of the site. Think of it as a map of
+        curiosities, distractions, obsessions, and cultural detours that have been worth the time.
+      </p>
 
-  <header id="site-header"></header>
+      <section class="side-section">
+        <h2>Categories</h2>
 
-<main>
-  <h1>Side quests</h1>
+        <div class="thinking-grid">
+          <a href="/games.html" class="thinking-card category-card">
+            <h3>Games</h3>
+            <p>Open worlds, narratives, mechanics, nostalgia, and opinions nobody asked for.</p>
+          </a>
 
-  <p>
-    Research is only one part of life. Side quests are where everything else lives.
-    Games, films, music, podcasts, random rabbit holes, and the kinds of things that
-    quietly occupy attention long after the serious work is done.
-  </p>
+          <article class="thinking-card">
+            <h3>Movies</h3>
+            <p>Coming soon.</p>
+          </article>
 
-  <p>
-    This section is less structured than the rest of the site. Think of it as a map
-    of curiosities, distractions, obsessions, and cultural detours that have been worth
-    the time.
-  </p>
+          <article class="thinking-card">
+            <h3>Music</h3>
+            <p>Coming soon.</p>
+          </article>
 
-  <section class="side-section">
-    <h2>Categories</h2>
+          <article class="thinking-card">
+            <h3>Podcasts</h3>
+            <p>Coming soon.</p>
+          </article>
+        </div>
+      </section>
+    </main>
 
-    <div class="thinking-grid">
-
-      <a href="/games.html" class="thinking-card category-card">
-        <h3>Games</h3>
-        <p>
-          Open worlds, narratives, mechanics, nostalgia, and opinions nobody asked for.
-        </p>
-      </a>
-
-      <article class="thinking-card">
-        <h3>Movies</h3>
-        <p>
-          Coming soon.
-        </p>
-      </article>
-
-      <article class="thinking-card">
-        <h3>Music</h3>
-        <p>
-          Coming soon.
-        </p>
-      </article>
-
-      <article class="thinking-card">
-        <h3>Podcasts</h3>
-        <p>
-          Coming soon.
-        </p>
-      </article>
-
-    </div>
-  </section>
-
-</main>
-
-</body>
+    {% include footer.html %}
+    {% include consent-banner.html %}
+  </body>
 </html>

@@ -1,0 +1,67 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{ page.title | escape }}</title>
+<meta name="description" content="{{ page.description | escape }}">
+{% if page.noindex %}
+  <meta name="robots" content="noindex, follow">
+{% endif %}
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<meta property="og:site_name" content="{{ site.title | escape }}">
+<meta property="og:type" content="{{ page.og_type | default: 'website' }}">
+<meta property="og:title" content="{{ page.title | escape }}">
+<meta property="og:description" content="{{ page.description | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ '/assets/images/social-card.jpg' | absolute_url }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.title | escape }}">
+<meta name="twitter:description" content="{{ page.description | escape }}">
+<meta name="twitter:image" content="{{ '/assets/images/social-card.jpg' | absolute_url }}">
+
+{% if page.og_type == 'article' %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": {{ page.title | jsonify }},
+      "description": {{ page.description | jsonify }},
+      "url": {{ page.url | absolute_url | jsonify }},
+      "author": {
+        "@type": "Person",
+        "name": "Sameer Devipur",
+        "url": {{ site.url | jsonify }}
+      }
+    }
+  </script>
+{% elsif page.nav == 'home' %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sameer Devipur",
+      "url": {{ site.url | jsonify }},
+      "jobTitle": "PhD researcher",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Lund University"
+      }
+    }
+  </script>
+{% endif %}
+
+<link rel="icon" type="image/svg+xml" href="{{ page.root }}assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+>
+<link rel="stylesheet" href="{{ page.root }}assets/css/style.css">
+
+<!-- Runs before paint so a saved dark theme does not flash light. -->
+<script src="{{ page.root }}assets/js/theme-init.js"></script>
+<script src="{{ page.root }}assets/js/site.js" defer></script>

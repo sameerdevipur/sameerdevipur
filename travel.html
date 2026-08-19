@@ -1,93 +1,52 @@
-<!DOCTYPE html>
+---
+title: "Travel Diary — Sameer Devipur"
+description: "Travel notes and observations from places Sameer Devipur has lived in or visited, including India, Sweden, and Denmark."
+root: ""
+nav: "travel"
+og_type: "website"
+---
+<!doctype html>
 <html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND56G7GR4N"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-ND56G7GR4N');
-  </script>
+  <head>
+    {% include head.html %}
+  </head>
 
-  <script>
-  (function() {
-    var theme = localStorage.getItem('theme');
-    if (theme) {
-      document.documentElement.setAttribute('data-theme', theme);
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    }
-  })();
-</script>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <meta charset="UTF-8">
-  <title>Travel Diary — Sameer Devipur</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <header id="site-header">
+      {% include header.html %}
+    </header>
 
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <main id="main-content">
+      <h1>Travel diary</h1>
 
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+      <p>
+        This page is a collection of trips, short detours, and snapshots taken along the way. Some
+        are from planned travel, others from moments that simply felt worth capturing.
+      </p>
 
-  <script src="assets/js/include.js" defer></script>
-</head>
+      <p>
+        Together, they form a quiet record of places I have passed through and the way they looked
+        to me at the time. No guides, no reviews, just fragments of movement and observation.
+      </p>
 
-<body>
+      <div class="country-container">
+        <a href="countries/india.html" class="country-btn">India</a>
+        <a href="countries/sweden.html" class="country-btn">Sweden</a>
+        <a href="countries/denmark.html" class="country-btn">Denmark</a>
+      </div>
 
-  <header id="site-header"></header>
+      <section class="side-section" aria-labelledby="upcoming-travel">
+        <h2 id="upcoming-travel">Notes still being written</h2>
+        <p class="placeholder-note">
+          Japan, France, Norway, the United States, Finland, Poland, the Czech Republic, and Nepal
+          will appear here when the observations have become actual stories.
+        </p>
+      </section>
+    </main>
 
-  <main>
-    <h1>Travel diary</h1>
-
-    <p>
-      This page is a collection of trips, short detours, and snapshots
-      taken along the way. Some are from planned travel, others from
-      moments that simply felt worth capturing.
-    </p>
-
-    <p>
-      Together, they form a quiet record of places I have passed through
-      and the way they looked to me at the time. No guides, no reviews,
-      just fragments of movement and observation.
-    </p>
-
-    <div class="country-container">
-      <a href="countries/india.html" class="country-btn">India</a>
-      <a href="countries/sweden.html" class="country-btn">Sweden</a>
-      <a href="countries/japan.html" class="country-btn">Japan</a>
-      <a href="countries/france.html" class="country-btn">France</a>
-      <a href="countries/denmark.html" class="country-btn">Denmark</a>
-      <a href="countries/norway.html" class="country-btn">Norway</a>
-      <a href="countries/usa.html" class="country-btn">USA</a>
-      <a href="countries/finland.html" class="country-btn">Finland</a>
-      <a href="countries/poland.html" class="country-btn">Poland</a>
-      <a href="countries/czech.html" class="country-btn">Czech Republic</a>
-      <a href="countries/nepal.html" class="country-btn">Nepal</a>
-      <a href="countries/future.html" class="country-btn">Upcoming Travel</a>
-    </div>
-    
-  </main>
-
-  <!--
-<div class="ambient-flags" aria-hidden="true">
-  <span class="ambient-flag f1"><span>🇮🇳</span></span>
-  <span class="ambient-flag f2"><span>🇸🇪</span></span>
-  <span class="ambient-flag f3"><span>🇯🇵</span></span>
-  <span class="ambient-flag f4"><span>🇫🇷</span></span>
-  <span class="ambient-flag f5"><span>🇩🇰</span></span>
-  <span class="ambient-flag f6"><span>🇳🇴</span></span>
-  <span class="ambient-flag f7"><span>🇺🇸</span></span>
-  <span class="ambient-flag f8"><span>🇫🇮</span></span>
-  <span class="ambient-flag f9"><span>🇵🇱</span></span>
-  <span class="ambient-flag f10"><span>🇨🇿</span></span>
-  <span class="ambient-flag f11"><span>🇳🇵</span></span>
-</div>
-  -->
-
-</body>
+    {% include footer.html %}
+    {% include consent-banner.html %}
+  </body>
 </html>
-

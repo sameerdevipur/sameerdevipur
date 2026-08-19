@@ -1,159 +1,112 @@
-<!DOCTYPE html>
+---
+title: "Blog — Sameer Devipur"
+description: "Essays by Sameer Devipur about time, physics, the universe, gravity, pulsars, quantum theory, and everyday life."
+root: ""
+nav: "blog"
+og_type: "website"
+---
+<!doctype html>
 <html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND56G7GR4N"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-ND56G7GR4N');
-  </script>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <script>
-  (function() {
-    var theme = localStorage.getItem('theme');
-    if (theme) {
-      document.documentElement.setAttribute('data-theme', theme);
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    }
-  })();
-</script>
+    <header id="site-header">
+      {% include header.html %}
+    </header>
+    <main id="main-content">
+      <h1>Blog</h1>
+      <p>
+        I used to write short articles and fun stories on
+        <a
+          href="https://thedopplerdude.blogspot.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >thedopplerdude.blogspot.com</a
+        >, which started as a team writing experiment with a couple of friends and slowly turned
+        into a place for ideas that did not quite fit anywhere else.
+      </p>
+      <p>
+        Some of the articles written by me on that blog have been copied and archived here, along
+        with their original publication dates. For the complete collection and to read excellent
+        pieces by Anagha and Rohan, visiting the original blog is strongly recommended.
+      </p>
+      <p>
+        At the moment, this page is in a quiet phase, thanks to me going through a writer's block.
+        The intention, however, is still very much alive.
+      </p>
+      <p>
+        Someday this space will fill up again with unfiltered thoughts, half-formed ideas, and
+        observations that feel worth writing down, even if they are not fully polished.
+      </p>
 
-  <meta charset="UTF-8">
-  <title>Blog — Sameer Devipur</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <script src="assets/js/include.js" defer></script>
+      <div class="blog-list">
+        <a href="blog/whatistime.html" class="blog-card">
+          <span class="blog-card-title">What Is Time?</span>
+          <time class="blog-card-date" datetime="2018-07-21">Originally posted: July 21, 2018</time>
+        </a>
 
-  <style>
-    .blog-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-top: 2rem;
-    }
+        <a href="blog/gravity.html" class="blog-card">
+          <span class="blog-card-title">Gravity</span>
+          <time class="blog-card-date" datetime="2018-08-02"
+            >Originally posted: August 2, 2018</time
+          >
+        </a>
 
-    .blog-card {
-      display: flex;
-      flex-direction: column;
-      gap: 0.2rem;
-      padding: 0.65rem 1.1rem;
-      border: 1px solid var(--border, #e0e0e0);
-      border-radius: 8px;
-      text-decoration: none;
-      color: inherit;
-      background: var(--card-bg, transparent);
-      transition: background 0.15s ease, border-color 0.15s ease;
-      max-width: 260px;
-    }
+        <a href="blog/quantum-atom.html" class="blog-card">
+          <span class="blog-card-title">Quantum-Atom</span>
+          <time class="blog-card-date" datetime="2018-10-16"
+            >Originally posted: October 16, 2018</time
+          >
+        </a>
 
-    .blog-card:hover {
-      background: var(--hover-bg, rgba(0, 0, 0, 0.04));
-      border-color: var(--border-hover, #aaa);
-    }
+        <a href="blog/speed-of-light.html" class="blog-card">
+          <span class="blog-card-title">The Speed of Light</span>
+          <time class="blog-card-date" datetime="2018-11-08"
+            >Originally posted: November 8, 2018</time
+          >
+        </a>
 
-    .blog-card-title {
-      font-size: 0.95rem;
-      font-weight: 500;
-      line-height: 1.3;
-    }
+        <a href="blog/our-universe-1.html" class="blog-card">
+          <span class="blog-card-title">Our Universe — Part 1</span>
+          <time class="blog-card-date" datetime="2018-11-22"
+            >Originally posted: November 22, 2018</time
+          >
+        </a>
 
-    .blog-card-date {
-      font-size: 0.75rem;
-      opacity: 0.55;
-      font-weight: 400;
-    }
-  </style>
-</head>
-<body>
+        <a href="blog/our-universe-2.html" class="blog-card">
+          <span class="blog-card-title">Our Universe — Part 2</span>
+          <time class="blog-card-date" datetime="2018-12-24"
+            >Originally posted: December 24, 2018</time
+          >
+        </a>
 
-  <header id="site-header"></header>
-  <main>
-    <h1>Blog</h1>
-    <p>
-      I used to write short articles and fun stories on
-      <a href="https://thedopplerdude.blogspot.com"
-         target="_blank" rel="noopener noreferrer">thedopplerdude.blogspot.com</a>,
-      which started as a team writing experiment with a couple of friends
-      and slowly turned into a place for ideas that did not quite fit
-      anywhere else.
-    </p>
-    <p>
-      Some of the articles written by me on that blog have been copied and
-      archived here, along with their original publication dates. For the
-      complete collection and to read excellent pieces by Anagha and Rohan,
-      visiting the original blog is strongly recommended.
-    </p>
-    <p>
-      At the moment, this page is in a quiet phase, thanks to me going
-      through a writer's block. The intention, however, is still very
-      much alive.
-    </p>
-    <p>
-      Someday this space will fill up again with unfiltered thoughts,
-      half-formed ideas, and observations that feel worth writing down,
-      even if they are not fully polished.
-    </p>
+        <a href="blog/pulsars.html" class="blog-card">
+          <span class="blog-card-title">Pulsars</span>
+          <time class="blog-card-date" datetime="2019-01-01"
+            >Originally posted: January 1, 2019</time
+          >
+        </a>
 
-    <div class="blog-grid">
-      <a href="blog/whatistime.html" class="blog-card">
-        <span class="blog-card-title">What Is Time?</span>
-        <span class="blog-card-date">Originally posted: July 21, 2018</span>
-      </a>
+        <a href="blog/funny-thing-time.html" class="blog-card">
+          <span class="blog-card-title">Funny Thing, Time.</span>
+          <time class="blog-card-date" datetime="2020-09-11"
+            >Originally posted: September 11, 2020</time
+          >
+        </a>
 
-      <a href="blog/gravity.html" class="blog-card">
-        <span class="blog-card-title">Gravity</span>
-        <span class="blog-card-date">Originally posted: August 02, 2018</span>
-      </a>
+        <a href="blog/monotony.html" class="blog-card">
+          <span class="blog-card-title">Monotony</span>
+          <time class="blog-card-date" datetime="2023-04-24"
+            >Originally posted: April 24, 2023</time
+          >
+        </a>
+      </div>
+    </main>
 
-      <a href="blog/quantum-atom.html" class="blog-card">
-        <span class="blog-card-title">Quantum-Atom</span>
-        <span class="blog-card-date">Originally posted: October 16, 2018</span>
-      </a>
-
-      <a href="blog/speed-of-light.html" class="blog-card">
-        <span class="blog-card-title">The Speed of Light</span>
-        <span class="blog-card-date">Originally posted: November 08, 2018</span>
-      </a>
-
-      <a href="blog/our-universe-1.html" class="blog-card">
-        <span class="blog-card-title">Our Universe — Part 1</span>
-        <span class="blog-card-date">Originally posted: November 22, 2018</span>
-      </a>
-
-      <a href="blog/our-universe-2.html" class="blog-card">
-        <span class="blog-card-title">Our Universe — Part 2</span>
-        <span class="blog-card-date">Originally posted: December 24, 2018</span>
-      </a>
-
-      <a href="blog/pulsars.html" class="blog-card">
-        <span class="blog-card-title">Pulsars</span>
-        <span class="blog-card-date">Originally posted: January 01, 2019</span>
-      </a>
-
-      <a href="blog/funny-thing-time.html" class="blog-card">
-        <span class="blog-card-title">Funny Thing, Time.</span>
-        <span class="blog-card-date">Originally posted: September 11, 2020</span>
-      </a>
-
-      <a href="blog/monotony.html" class="blog-card">
-        <span class="blog-card-title">Monotony</span>
-        <span class="blog-card-date">Originally posted: April 24, 2023</span>
-      </a>
-      <!-- Add more posts below in the same format:
-      <a href="blog/your-post-slug.html" class="blog-card">
-        <span class="blog-card-title">Post Title Here</span>
-        <span class="blog-card-date">Originally posted: Month DD, YYYY</span>
-      </a>
-      -->
-    </div>
-  </main>
-</body>
+    {% include footer.html %}
+    {% include consent-banner.html %}
+  </body>
 </html>

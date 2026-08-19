@@ -1,0 +1,18 @@
+title: Sameer Devipur
+description: Personal website of Sameer Devipur, featuring battery research, essays, travel notes, and side quests.
+url: https://sameerdevipur.com
+baseurl: ""
+lang: en
+timezone: Europe/Stockholm
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package-lock.json
+  - package.json
+  - playwright.config.js
+  - README.md
+  - test-results
+  - tests
+  - tools

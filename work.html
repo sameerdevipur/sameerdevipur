@@ -1,148 +1,110 @@
-<!DOCTYPE html>
+---
+title: "My Work — Sameer Devipur"
+description: "Research notes from Sameer Devipur on lithium-ion battery thermal runaway, spectroscopy, and laser-based gas diagnostics."
+root: ""
+nav: "work"
+og_type: "website"
+---
+<!doctype html>
 <html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND56G7GR4N"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-ND56G7GR4N');
-  </script>
+  <head>
+    {% include head.html %}
+  </head>
 
-  <script>
-    (function() {
-      var theme = localStorage.getItem('theme');
-      if (theme) {
-        document.documentElement.setAttribute('data-theme', theme);
-      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-      }
-    })();
-  </script>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <meta charset="UTF-8">
-  <title>My Work — Sameer Devipur</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <header id="site-header">
+      {% include header.html %}
+    </header>
 
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="assets/css/style.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-  <script src="assets/js/include.js" defer></script>
-</head>
-
-<body>
-
-  <header id="site-header"></header>
-
-  <main>
-
-    <article class="featured-card">
-      <h1>My Work</h1>
-      
-      <p>
-        My work sits at the uncomfortable but fascinating edge where energy
-        storage stops behaving politely. I am a PhD student in Physics working
-        on thermal runaway in lithium-ion batteries, a failure process in which
-        a battery transitions from a controlled electrochemical device into a
-        rapidly evolving chemical reactor.
-      </p>
-
-      <div class="expand-content">
-        <p>
-          Once initiated, thermal runaway is fast, violent, and unforgiving.
-          Temperature rises within seconds, gases are released, materials
-          decompose, and the system quickly outruns any simple safety mechanism.
-          Understanding this process in detail is no longer optional. It is a
-          prerequisite for <em>safe electrification</em>.
-        </p>
-
-        <figure>
-          <img src="assets/images/thermal-runaway-abuse.png" alt="Abuse scenarios leading to thermal runaway in lithium-ion batteries">
-          <figcaption>
-            Typical mechanical, electrical, and thermal abuse pathways that can
-            initiate thermal runaway in lithium-ion cells.
-          </figcaption>
-          <div class="citation">
-            Yixin Dai, Aidin Panahi, <em>Thermal runaway process in lithium-ion batteries: A review</em>, Next Energy, 2025.
-          </div>
-        </figure>
+    <main id="main-content">
+      <article class="featured-card">
+        <h1>My Work</h1>
 
         <p>
-          At a high level, thermal runaway begins when heat generation inside
-          a cell exceeds its ability to dissipate that heat. The trigger can be
-          mechanical abuse, electrical abuse, or external heating. Internally,
-          it unfolds as a cascade.
+          My work sits at the uncomfortable but fascinating edge where energy storage stops behaving
+          politely. I am a PhD student in Physics working on thermal runaway in lithium-ion
+          batteries, a failure process in which a battery transitions from a controlled
+          electrochemical device into a rapidly evolving chemical reactor.
         </p>
 
-        <p>
-          I use laser-based diagnostics to observe thermal runaway as it unfolds,
-          in real time, without physical contact. Lasers allow remote, selective,
-          and extremely fast interrogation of matter. At the core of this approach is <em>spectroscopy</em>. 
-          Performed fast enough, this yields time-resolved chemistry, not merely an outcome.
-        </p>
+        <div id="research-details" class="expand-content">
+          <p>
+            Once initiated, thermal runaway is fast, violent, and unforgiving. Temperature rises
+            within seconds, gases are released, materials decompose, and the system quickly outruns
+            any simple safety mechanism. Understanding this process in detail is no longer optional.
+            It is a prerequisite for <em>safe electrification</em>.
+          </p>
 
-        <figure>
-          <img src="assets/images/spectroscopy-energy-levels.png" alt="Energy level diagram illustrating absorption and emission spectroscopy">
-          <figcaption>
-            Simplified schematic of absorption and emission processes used in laser-based spectroscopic diagnostics.
-          </figcaption>
-        </figure>
+          <figure>
+            <img
+              src="assets/images/thermal-runaway-abuse.webp"
+              width="1384"
+              height="782"
+              loading="lazy"
+              decoding="async"
+              alt="Abuse scenarios leading to thermal runaway in lithium-ion batteries"
+            >
+            <figcaption>
+              Typical mechanical, electrical, and thermal abuse pathways that can initiate thermal
+              runaway in lithium-ion cells.
+              <span class="citation">
+                Yixin Dai, Aidin Panahi,
+                <em>Thermal runaway process in lithium-ion batteries: A review</em>, Next Energy,
+                2025.
+              </span>
+            </figcaption>
+          </figure>
 
-        <p>
-          In short, I am trying to turn a catastrophic event into a measurable,
-          understandable, and ultimately manageable phenomenon.
-        </p>
-      </div>
+          <p>
+            At a high level, thermal runaway begins when heat generation inside a cell exceeds its
+            ability to dissipate that heat. The trigger can be mechanical abuse, electrical abuse,
+            or external heating. Internally, it unfolds as a cascade.
+          </p>
 
-      <div class="read-more-align-right">
-        <button class="read-more-btn">Read more</button>
-      </div>
-    </article>
+          <p>
+            I use laser-based diagnostics to observe thermal runaway as it unfolds, in real time,
+            without physical contact. Lasers allow remote, selective, and extremely fast
+            interrogation of matter. At the core of this approach is <em>spectroscopy</em>.
+            Performed fast enough, this yields time-resolved chemistry, not merely an outcome.
+          </p>
 
+          <figure>
+            <img
+              src="assets/images/spectroscopy-energy-levels.webp"
+              width="1384"
+              height="779"
+              loading="lazy"
+              decoding="async"
+              alt="Energy level diagram illustrating absorption and emission spectroscopy"
+            >
+            <figcaption>
+              Simplified schematic of absorption and emission processes used in laser-based
+              spectroscopic diagnostics.
+            </figcaption>
+          </figure>
 
-    <section>
-      <h2 style="margin-bottom: 1.6rem;">Scribbles</h2>
+          <p>
+            In short, I am trying to turn a catastrophic event into a measurable, understandable,
+            and ultimately manageable phenomenon.
+          </p>
+        </div>
 
-      <div class="two-col-grid">
+        <div class="read-more-align-right">
+          <button
+            type="button"
+            class="read-more-btn"
+            aria-expanded="false"
+            aria-controls="research-details"
+          >
+            Read more
+          </button>
+        </div>
+      </article>
+    </main>
 
-        <article class="thinking-card">
-          <h3>Untitled 1</h3>
-          <div class="expand-content">
-            <p>Unwritten.</p>
-          </div>
-          <button class="read-more-btn">Read more</button>
-        </article>
-
-        <article class="thinking-card">
-          <h3>Untitled 2</h3>
-          <div class="expand-content">
-            <p>Unwritten.</p>
-          </div>
-          <button class="read-more-btn">Read more</button>
-        </article>
-
-      </div>
-    </section>
-    
-  </main>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.querySelectorAll('.read-more-btn').forEach(button => {
-        button.addEventListener('click', function () {
-          // Finds the closest card, whether it is the large featured one or a small grid one
-          const card = this.closest('.featured-card, .thinking-card');
-          card.classList.toggle('expanded');
-          this.textContent = card.classList.contains('expanded') ? 'Read less' : 'Read more';
-        });
-      });
-    });
-  </script>
-
-</body>
+    {% include footer.html %}
+    {% include consent-banner.html %}
+  </body>
 </html>
