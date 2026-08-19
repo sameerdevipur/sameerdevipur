@@ -1,79 +1,57 @@
-<!DOCTYPE html>
+---
+title: "About Me"
+description: "About Sameer Devipur, a chemical engineer and PhD researcher at Lund University studying battery safety and laser diagnostics."
+root: ""
+nav: "home"
+og_type: "website"
+---
+<!doctype html>
 <html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND56G7GR4N"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-ND56G7GR4N');
-  </script>
+  <head>
+    {% include head.html %}
+  </head>
 
-  <script>
-  (function() {
-    var theme = localStorage.getItem('theme');
-    if (theme) {
-      document.documentElement.setAttribute('data-theme', theme);
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    }
-  })();
-</script>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <meta charset="UTF-8">
-  <title>About Me</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <header id="site-header">
+      {% include header.html %}
+    </header>
 
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <main id="main-content">
+      <h1>About Me</h1>
 
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+      <p>
+        I see myself as someone who is constantly curious and mildly allergic to simple answers.
+        Professionally, I am a PhD student in Physics working on Battery Safety and Energy Systems,
+        which mostly means poking complex systems until they reveal how they behave.
+      </p>
 
-  <script src="assets/js/include.js" defer></script>
-</head>
+      <p>
+        My academic background is in Chemical Engineering, so I tend to think in terms of processes,
+        materials, and why things fail in interesting ways. In my free time, I track game progress,
+        write notes that may or may not turn into proper ideas, take photos of things that catch my
+        eye, and collect fun facts that serve no immediate purpose but feel important anyway.
+      </p>
 
-<body>
+      <p>
+        This site is less a formal biography and more an honest snapshot of how I think, work, and
+        occasionally overthink.
+      </p>
 
-  <header id="site-header"></header>
+      <p>
+        If you’re looking for a more polished version of my academic history,
+        <a
+          href="https://www.linkedin.com/in/sameer-v-devipur/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        has that covered.
+      </p>
+    </main>
 
-  <main>
-    <h1>About Me</h1>
-
-    <p>
-      I see myself as someone who is constantly curious and
-      mildly allergic to simple answers. Professionally, I am a PhD student
-      in Physics working on Battery Safety and Energy Systems, which mostly
-      means poking complex systems until they reveal how they behave.
-    </p>
-
-    <p>
-      My academic background is in Chemical Engineering, so I tend to think
-      in terms of processes, materials, and why things fail in interesting
-      ways. In my free time, I track game progress, write notes that may or
-      may not turn into proper ideas, take photos of things that catch my
-      eye, and collect fun facts that serve no immediate purpose but feel
-      important anyway.
-    </p>
-
-    <p>
-      This site is less a formal biography and more an honest snapshot of
-      how I think, work, and occasionally overthink.
-    </p>
-
-    <p>
-      If you’re looking for a more polished version of my academic history,
-      <a href="https://www.linkedin.com/in/sameer-v-devipur/"
-         target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      has that covered.
-    </p>
-  </main>
-
-</body>
-  
+    {% include footer.html %}
+    {% include consent-banner.html %}
+  </body>
 </html>
-
-

@@ -1,0 +1,26 @@
+{
+  "name": "sameerdevipur",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bundle exec jekyll build",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint:css": "stylelint \"assets/css/**/*.css\"",
+    "lint:html": "html-validate \"_site/**/*.html\"",
+    "lint:js": "eslint .",
+    "links": "node tools/check-links.mjs",
+    "test:e2e": "playwright test",
+    "validate": "npm run format:check && npm run lint:js && npm run lint:css && npm run build && npm run lint:html && npm run links && npm run test:e2e"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@shopify/prettier-plugin-liquid": "^1.9.4",
+    "eslint": "^9.33.0",
+    "html-validate": "^10.3.0",
+    "prettier": "^3.6.2",
+    "stylelint": "^16.23.1",
+    "stylelint-config-standard": "^39.0.0"
+  }
+}

@@ -1,0 +1,66 @@
+---
+title: "Privacy & Analytics — Sameer Devipur"
+description: "Privacy and analytics information for sameerdevipur.com, including Google Analytics consent controls."
+root: ""
+nav: ""
+og_type: "website"
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header id="site-header">
+      {% include header.html %}
+    </header>
+
+    <main id="main-content">
+      <h1>Privacy &amp; analytics</h1>
+
+      <p>
+        This personal website uses Google Analytics only when you choose to allow it. Analytics is
+        disabled by default and no Google Analytics script is loaded before consent.
+      </p>
+
+      <h2>What is measured</h2>
+      <p>
+        When allowed, Google Analytics records information such as visited pages, approximate
+        location, device and browser type, referral source, and interaction timing. I use aggregated
+        reports to understand which pages are useful and how visitors find the site.
+      </p>
+
+      <h2>Your choice</h2>
+      <p id="analytics-status" class="privacy-status" aria-live="polite">
+        Checking your analytics preference.
+      </p>
+      <noscript>
+        <p class="privacy-status">Analytics remains disabled because JavaScript is not running.</p>
+      </noscript>
+      <p>
+        <button type="button" class="button-secondary" data-reset-consent>
+          Change analytics preference
+        </button>
+      </p>
+
+      <h2>Provider and retention</h2>
+      <p>
+        Google LLC provides the analytics service. Google may process analytics data outside the
+        European Economic Area under its applicable data transfer arrangements. The Analytics
+        property should be configured to use the shortest practical event-data retention period and
+        should not collect advertising personalization data.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this website’s analytics can be sent through the
+        <a href="contact.html">contact page</a>.
+      </p>
+    </main>
+
+    {% include footer.html %}
+    {% include consent-banner.html %}
+  </body>
+</html>

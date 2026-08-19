@@ -1,0 +1,53 @@
+<nav class="site-nav" aria-label="Primary navigation">
+  <a
+    href="{{ page.root }}index.html"
+    {% if page.nav == 'home' %}
+      aria-current="page"
+    {% endif %}
+    >Hi!</a
+  >
+  <a
+    href="{{ page.root }}work.html"
+    {% if page.nav == 'work' %}
+      aria-current="page"
+    {% endif %}
+    >Lab Notes</a
+  >
+  <a
+    href="{{ page.root }}blog.html"
+    {% if page.nav == 'blog' %}
+      aria-current="page"
+    {% endif %}
+    >Blog</a
+  >
+  <a
+    href="{{ page.root }}side-quests.html"
+    {% if page.nav == 'side-quests' %}
+      aria-current="page"
+    {% endif %}
+    >Side Quests</a
+  >
+  <a
+    href="{{ page.root }}travel.html"
+    {% if page.nav == 'travel' %}
+      aria-current="page"
+    {% endif %}
+    >Travel Diary</a
+  >
+  <a
+    href="{{ page.root }}contact.html"
+    {% if page.nav == 'contact' %}
+      aria-current="page"
+    {% endif %}
+    >Say Hello!</a
+  >
+
+  <button
+    id="theme-toggle"
+    type="button"
+    aria-label="Switch to dark theme"
+    aria-pressed="false"
+  >
+    <span aria-hidden="true">Theme</span>
+  </button>
+</nav>

@@ -1,0 +1,11 @@
+_site/
+.bundle/
+vendor/bundle/
+node_modules/
+test-results/
+playwright-report/
+.jekyll-cache/
+.sass-cache/
+.DS_Store
+Thumbs.db
+*.log

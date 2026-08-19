@@ -1,0 +1,26 @@
+<section
+  id="analytics-consent"
+  class="consent-banner"
+  aria-label="Analytics preferences"
+  hidden
+>
+  <div>
+    <h2>Analytics preference</h2>
+    <p>
+      I use Google Analytics to understand which pages are useful. It stays off unless you choose to
+      allow it.
+      <a href="{{ page.root }}privacy.html">Read the privacy notice</a>.
+    </p>
+  </div>
+  <div class="consent-actions">
+    <button
+      type="button"
+      class="button-secondary"
+      data-consent="denied"
+      aria-label="Decline analytics"
+    >
+      Decline
+    </button>
+    <button type="button" class="button-primary" data-consent="granted">Allow analytics</button>
+  </div>
+</section>

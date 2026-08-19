@@ -1,115 +1,96 @@
-<!DOCTYPE html>
+---
+title: "Pulsars — Sameer Devipur"
+description: "An accessible introduction by Sameer Devipur to pulsars, rotating neutron stars, and their cosmic signals."
+root: "../"
+nav: "blog"
+og_type: "article"
+---
+<!doctype html>
 <html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND56G7GR4N"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-ND56G7GR4N');
-  </script>
+  <head>
+    {% include head.html %}
+  </head>
 
-  <script>
-    (function() {
-      var theme = localStorage.getItem('theme');
-      if (theme) {
-        document.documentElement.setAttribute('data-theme', theme);
-      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-      }
-    })();
-  </script>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <meta charset="UTF-8">
-  <title>Pulsars — Sameer Devipur</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
-  <script src="../assets/js/include.js" defer></script>
+    <header id="site-header">
+      {% include header.html %}
+    </header>
 
-</head>
+    <main id="main-content">
+      <a href="../blog.html" class="back-link">← Back to Blog</a>
 
-<body>
+      <h1>Pulsars</h1>
 
-  <header id="site-header"></header>
+      <p>Original post date: January 01, 2019</p>
 
-  <main>
-    <a href="../blog.html" class="back-link">← Back to Blog</a>
-    
-    <h1>Pulsars</h1>
+      <p>
+        What does a motorbike and a dwarf star have in common? Technically speaking, not much. But
+        when you hear the word "Pulsar", the first thing you picture is probably a bike. So why
+        bring up a bike in a post about a star?
+      </p>
 
-    <p>
-      Original post date: January 01, 2019
-    </p>
+      <p>
+        In space science, pulsars are bursts of radiation blasting out from a neutron star, created
+        when ions meet the intense magnetic field near a neutron star's poles. Most people are
+        familiar with the Aurora Borealis. Earth's magnetic field near its poles energizes radiation
+        from the Sun, producing those spectacular colourful lights in the night sky. The same
+        phenomenon occurs on other planets. A neutron star takes this to an extreme.
+      </p>
 
-    <p>
-      What does a motorbike and a dwarf star have in common? Technically speaking, not much. But
-      when you hear the word "Pulsar", the first thing you picture is probably a bike. So why bring
-      up a bike in a post about a star?
-    </p>
+      <p>
+        What is a neutron star? It is what remains after a larger star exhausts its fuel. When a
+        star can no longer sustain its own gravitational pull, it undergoes a supernova and
+        collapses under its own gravity. The result is a neutron star, one of the most bizarre
+        objects in the known universe. The pressure inside is so extreme that electrons are forced
+        to fuse into the nucleus, producing a frictionless fluid in constant motion within the star.
+        To grasp the density: a single teaspoon of neutron star material weighs more than Mount
+        Everest. That density also generates one of the strongest magnetic fields of any cosmic body
+        we know of.
+      </p>
 
-    <p>
-      In space science, pulsars are bursts of radiation blasting out from a neutron star, created
-      when ions meet the intense magnetic field near a neutron star's poles. Most people are familiar
-      with the Aurora Borealis. Earth's magnetic field near its poles energizes radiation from the
-      Sun, producing those spectacular colourful lights in the night sky. The same phenomenon occurs
-      on other planets. A neutron star takes this to an extreme.
-    </p>
+      <p>
+        Then there is the spin. Consider a ballet dancer spinning with arms outstretched who
+        suddenly pulls them in. The rotation accelerates sharply. Or a stone on a string: shorten
+        the string and the stone spins faster. This is the conservation of angular momentum. In
+        classical physics, angular momentum is proportional to the radius of the spinning body. When
+        the radius decreases, rotational speed increases to compensate.
+      </p>
 
-    <p>
-      What is a neutron star? It is what remains after a larger star exhausts its fuel. When a star
-      can no longer sustain its own gravitational pull, it undergoes a supernova and collapses under
-      its own gravity. The result is a neutron star, one of the most bizarre objects in the known
-      universe. The pressure inside is so extreme that electrons are forced to fuse into the nucleus,
-      producing a frictionless fluid in constant motion within the star. To grasp the density: a
-      single teaspoon of neutron star material weighs more than Mount Everest. That density also
-      generates one of the strongest magnetic fields of any cosmic body we know of.
-    </p>
+      <p>
+        A neutron star goes through exactly this. A star that was millions of kilometres wide
+        collapses to roughly 25 kilometres across. The original spin of the star increases
+        exponentially as a result. The fastest recorded neutron star spin is nearly 700 rotations
+        per second. A point on its surface travels at close to one fifth the speed of light.
+      </p>
 
-    <p>
-      Then there is the spin. Consider a ballet dancer spinning with arms outstretched who suddenly
-      pulls them in. The rotation accelerates sharply. Or a stone on a string: shorten the string
-      and the stone spins faster. This is the conservation of angular momentum. In classical physics,
-      angular momentum is proportional to the radius of the spinning body. When the radius decreases,
-      rotational speed increases to compensate.
-    </p>
+      <p>
+        So how do pulsars form? The combination of that intense magnetic field and the rapid spin
+        produces beams of radiation from the star's poles. Because the rotational axis of a neutron
+        star is not fixed and sweeps around like a lighthouse beacon, the radiation sweeps through
+        space in a regular pattern. This is actually how neutron stars are detected. We look for
+        regular dips in brightness, the signature of a pulsar sweeping past us. A neutron star is
+        only detectable if its pulsar happens to be aimed in our direction.
+      </p>
 
-    <p>
-      A neutron star goes through exactly this. A star that was millions of kilometres wide collapses
-      to roughly 25 kilometres across. The original spin of the star increases exponentially as a
-      result. The fastest recorded neutron star spin is nearly 700 rotations per second. A point on
-      its surface travels at close to one fifth the speed of light.
-    </p>
+      <p>
+        Without pulsars, finding a 25-kilometre object somewhere in the vastness of space would be
+        essentially impossible. Thanks to them, we have a window into the afterlife of stars and
+        some of the most extreme physics the universe has to offer.
+      </p>
 
-    <p>
-      So how do pulsars form? The combination of that intense magnetic field and the rapid spin
-      produces beams of radiation from the star's poles. Because the rotational axis of a neutron
-      star is not fixed and sweeps around like a lighthouse beacon, the radiation sweeps through
-      space in a regular pattern. This is actually how neutron stars are detected. We look for
-      regular dips in brightness, the signature of a pulsar sweeping past us. A neutron star is only
-      detectable if its pulsar happens to be aimed in our direction.
-    </p>
+      <p>
+        <em
+          >Originally posted on
+          <a href="https://thedopplerdude.blogspot.com" target="_blank" rel="noopener noreferrer">
+            thedopplerdude.blogspot.com</a
+          >.</em
+        >
+      </p>
+    </main>
 
-    <p>
-      Without pulsars, finding a 25-kilometre object somewhere in the vastness of space would be
-      essentially impossible. Thanks to them, we have a window into the afterlife of stars and some
-      of the most extreme physics the universe has to offer.
-    </p>
-
-    <p>
-      <em>Originally posted on
-      <a href="https://thedopplerdude.blogspot.com" target="_blank" rel="noopener noreferrer">
-      thedopplerdude.blogspot.com</a>.</em>
-    </p>
-
-  </main>
-
-</body>
+    {% include footer.html %}
+    {% include consent-banner.html %}
+  </body>
 </html>
