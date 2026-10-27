@@ -5,6 +5,7 @@ baseurl: ""
 lang: en
 timezone: Europe/Stockholm
 
+# Keep development tools and dependency files out of the published site.
 exclude:
   - Gemfile
   - Gemfile.lock

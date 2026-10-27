@@ -18,6 +18,7 @@ function collectHtml(directory) {
 }
 
 function localTarget(sourceFile, rawReference) {
+  // Check the file path; query strings and fragment IDs do not change its target.
   const reference = rawReference.split("#")[0].split("?")[0];
 
   if (
@@ -29,6 +30,7 @@ function localTarget(sourceFile, rawReference) {
     return null;
   }
 
+  // Root-relative links start at _site; other links start at the current page.
   const decoded = decodeURIComponent(reference);
   const target = decoded.startsWith("/")
     ? join(siteRoot, decoded)

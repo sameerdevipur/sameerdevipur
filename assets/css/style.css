@@ -354,6 +354,7 @@ figcaption {
   margin-bottom: 1.2rem;
 }
 
+/* Leave the full content readable when JavaScript is unavailable. */
 .js .expand-content {
   display: none;
   margin-top: 0.8rem;

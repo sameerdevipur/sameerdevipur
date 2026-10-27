@@ -1,6 +1,7 @@
 const ANALYTICS_ID = "G-ND56G7GR4N";
 const CONSENT_KEY = "analytics-consent";
 
+// Blocked storage must not prevent the page from working without saved preferences.
 function readPreference(key) {
   try {
     return window.localStorage.getItem(key);
@@ -59,6 +60,7 @@ function initializeDisclosures() {
       return;
     }
 
+    // Give each button a stable panel reference for assistive technology.
     const panelId = panel.id || `disclosure-panel-${index + 1}`;
     panel.id = panelId;
     panel.hidden = true;
@@ -79,6 +81,7 @@ function initializeDisclosures() {
 }
 
 function prepareConsentMode() {
+  // Queue the default consent settings before requesting the analytics script.
   window.dataLayer = window.dataLayer || [];
   window.gtag =
     window.gtag ||
@@ -126,6 +129,7 @@ function disableAnalytics() {
     });
   }
 
+  // Try both host-only cookies and cookies set explicitly for this hostname.
   document.cookie.split(";").forEach((cookie) => {
     const name = cookie.split("=")[0].trim();
 
@@ -143,6 +147,7 @@ function initializeAnalyticsConsent() {
   const globalPrivacyControl = navigator.globalPrivacyControl === true;
   let preference = readPreference(CONSENT_KEY);
 
+  // The browser's privacy signal takes precedence over a saved opt-in.
   if (globalPrivacyControl && preference !== "denied") {
     preference = "denied";
     writePreference(CONSENT_KEY, preference);
