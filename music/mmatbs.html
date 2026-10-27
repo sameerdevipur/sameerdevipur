@@ -8,63 +8,10 @@ og_type: "article"
 <!doctype html>
 <html lang="en">
   <head>
-    <script>
-      (function () {
-        var theme = localStorage.getItem('theme');
-
-        if (theme) {
-          document.documentElement.setAttribute('data-theme', theme);
-        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          document.documentElement.setAttribute('data-theme', 'dark');
-        }
-      })();
-    </script>
-
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : '';
-
-        j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-MBDZ4VKH');
-    </script>
-    <!-- End Google Tag Manager -->
-
-    <meta charset="UTF-8">
-    <title>Mr. Morale &amp; the Big Steppers by Kendrick Lamar</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
-    <link rel="stylesheet" href="../assets/css/style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    >
-
-    <script src="../assets/js/include.js" defer></script>
+    {% include head.html %}
   </head>
 
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-MBDZ4VKH"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <header id="site-header">
@@ -73,9 +20,7 @@ og_type: "article"
 
     <main id="main-content">
       <p>
-        <a class="back-link" href="/music.html">
-          ← Back to Music
-        </a>
+        <a class="back-link" href="/music.html"> ← Back to Music </a>
       </p>
 
       <h1>Mr. Morale &amp; the Big Steppers</h1>
@@ -84,367 +29,331 @@ og_type: "article"
 
       <p>
         This is how Kung Fu Kenny a.k.a. Kendrick Lamar opens
-        <em>Mr. Morale &amp; the Big Steppers</em>, his first studio album in five
-        years. He had been away for 1855 days (much like myself going through this
-        shitty writer's block for so long), a number he mentions right at the
-        beginning and which also becomes part of the storytelling during his tour.
-        His previous album, <em>DAMN.</em>, had won the Pulitzer Prize for Music and
-        received widespread critical acclaim. His earlier works were equally
+        <em>Mr. Morale &amp; the Big Steppers</em>, his first studio album in five years. He had
+        been away for 1855 days (much like myself going through this shitty writer's block for so
+        long), a number he mentions right at the beginning and which also becomes part of the
+        storytelling during his tour. His previous album, <em>DAMN.</em>, had won the Pulitzer Prize
+        for Music and received widespread critical acclaim. His earlier works were equally
         remarkable, and I hope to write about them one day.
       </p>
 
       <p>
-        Until then, much of Kendrick's music had focused on the world around
-        the struggles of the Black community in America, systemic racism, gang
-        violence, drugs, and the many ways society fails people. Then, in May 2022,
-        he returned with an album that felt rather unexpected, even though fans had
-        been waiting for years, wondering what he had been working on all this while.
+        Until then, much of Kendrick's music had focused on the world around the struggles of the
+        Black community in America, systemic racism, gang violence, drugs, and the many ways society
+        fails people. Then, in May 2022, he returned with an album that felt rather unexpected, even
+        though fans had been waiting for years, wondering what he had been working on all this
+        while.
       </p>
 
       <p>And what a return it was.</p>
 
       <p>
-        This wasn't an album chasing radio hits, commercial success, or music to
-        make people dance at parties. Of course, there are some aura-farming type of
-        beats on it that make you C-walk on a random Tuesday in the lab (no, I've never done it okay?).
-        But "heavy" is the word I keep coming back to. Heavy in its
-        subject matter, heavy in its honesty, and heavy in the way it makes you think
-        about things you might otherwise prefer not to think about.
+        This wasn't an album chasing radio hits, commercial success, or music to make people dance
+        at parties. Of course, there are some aura-farming type of beats on it that make you C-walk
+        on a random Tuesday in the lab (no, I've never done it okay?). But "heavy" is the word I
+        keep coming back to. Heavy in its subject matter, heavy in its honesty, and heavy in the way
+        it makes you think about things you might otherwise prefer not to think about.
       </p>
 
       <p>
-        The album begins with <em>United in Grief</em>, and I find the title itself
-        fascinating. I have thought about it quite a bit, and I keep coming back to
-        the idea that grief might be one of the few human experiences that genuinely
-        unites us.
+        The album begins with <em>United in Grief</em>, and I find the title itself fascinating. I
+        have thought about it quite a bit, and I keep coming back to the idea that grief might be
+        one of the few human experiences that genuinely unites us.
       </p>
 
       <p>
-        Think about it. Happiness looks different for everyone. One person might
-        celebrate by going out, meeting friends, and partying all night. Another
-        might be perfectly happy sitting at home with a cup of coffee, enjoying
-        their own company. Anger, love, excitement, and even the way we express
-        affection can vary enormously from one person to another. Our personalities,
-        experiences, and circumstances shape how we experience and express these
-        emotions.
+        Think about it. Happiness looks different for everyone. One person might celebrate by going
+        out, meeting friends, and partying all night. Another might be perfectly happy sitting at
+        home with a cup of coffee, enjoying their own company. Anger, love, excitement, and even the
+        way we express affection can vary enormously from one person to another. Our personalities,
+        experiences, and circumstances shape how we experience and express these emotions.
       </p>
 
       <p>
-        Grief is different, at least in the way I see it. Yes, everyone grieves
-        differently. Some people cry, some withdraw, some keep themselves busy, and
-        others don't know how to process what they're feeling. But beneath those
-        differences, there seems to be a shared human experience. Whether it is the loss of a loved
-        one, a relationship, a dream, or a part of ourselves, there is something
-        deeply familiar about that pain.
+        Grief is different, at least in the way I see it. Yes, everyone grieves differently. Some
+        people cry, some withdraw, some keep themselves busy, and others don't know how to process
+        what they're feeling. But beneath those differences, there seems to be a shared human
+        experience. Whether it is the loss of a loved one, a relationship, a dream, or a part of
+        ourselves, there is something deeply familiar about that pain.
       </p>
 
       <p>
-        Perhaps we don't experience grief in exactly the same way, but we recognise
-        something of ourselves in another person's suffering. And that, to me, makes
-        <em>United in Grief</em> a brilliant way to begin an album that spends so
-        much time exploring our emotional and psychological struggles. It starts
-        with something universal before taking us into the deeply personal.
+        Perhaps we don't experience grief in exactly the same way, but we recognise something of
+        ourselves in another person's suffering. And that, to me, makes
+        <em>United in Grief</em> a brilliant way to begin an album that spends so much time
+        exploring our emotional and psychological struggles. It starts with something universal
+        before taking us into the deeply personal.
       </p>
 
       <p>And this is just the beginning.</p>
 
       <p>
-        The second track, <em>N95</em>, takes a different approach. It's an absolute
-        banger, but beneath the beat, Kendrick is asking some uncomfortable questions
-        about the things we use to define ourselves. Take off the designer clothes,
-        the luxury accessories, the status symbols, the things you've accumulated to
-        show the world who you are. Strip all of that away, and what are you left
-        with? Who are you when you can no longer hide behind the things you own or
+        The second track, <em>N95</em>, takes a different approach. It's an absolute banger, but
+        beneath the beat, Kendrick is asking some uncomfortable questions about the things we use to
+        define ourselves. Take off the designer clothes, the luxury accessories, the status symbols,
+        the things you've accumulated to show the world who you are. Strip all of that away, and
+        what are you left with? Who are you when you can no longer hide behind the things you own or
         the image you've built for yourself?
       </p>
 
       <p>
-        It's a simple question, but a difficult one to answer honestly. We spend so
-        much time trying to look successful, desirable, or important that we rarely
-        stop to ask whether any of those things actually define us. What remains when
-        the performance ends? (ooof dark one, I know, but keep going).
-        <em>N95</em> makes you want to dance while asking you to question the very things
-        you might be dancing for. Classic Kendrick.
+        It's a simple question, but a difficult one to answer honestly. We spend so much time trying
+        to look successful, desirable, or important that we rarely stop to ask whether any of those
+        things actually define us. What remains when the performance ends? (ooof dark one, I know,
+        but keep going).
+        <em>N95</em> makes you want to dance while asking you to question the very things you might
+        be dancing for. Classic Kendrick.
       </p>
 
       <p>
-        Take <em>Father Time</em> next. This song is the one that motivated me to write about this album here. In a single song, Kendrick opens up
-        an entire conversation about masculinity, emotional repression, parenting,
-        and generational trauma. He talks about the lessons he learned growing up,
-        particularly the idea that men should suppress their emotions, toughen up,
-        and get on with life.
+        Take <em>Father Time</em> next. This song is the one that motivated me to write about this
+        album here. In a single song, Kendrick opens up an entire conversation about masculinity,
+        emotional repression, parenting, and generational trauma. He talks about the lessons he
+        learned growing up, particularly the idea that men should suppress their emotions, toughen
+        up, and get on with life.
       </p>
 
       <p>
-        One of the moments that struck me most is when Kendrick recalls his own
-        mother's death and how his father reacted to it. His father went to the
-        funeral, then returned to work the very next day. There was no time to stop
-        and grieve. "The bills ain't got no silver spoon", he says in the song. It is
-        a heartbreaking example of how deeply ingrained the idea of emotional
-        suppression can be, even when someone is dealing with the loss of a loved one.
+        One of the moments that struck me most is when Kendrick recalls his own mother's death and
+        how his father reacted to it. His father went to the funeral, then returned to work the very
+        next day. There was no time to stop and grieve. "The bills ain't got no silver spoon", he
+        says in the song. It is a heartbreaking example of how deeply ingrained the idea of
+        emotional suppression can be, even when someone is dealing with the loss of a loved one.
       </p>
 
       <p>
-        It is such a familiar idea. Many of us have seen men (humans, genereally but this song is about toxic masculinity, don't cancel me)
-        in our lives behave this way, whether they are our fathers, grandfathers, or someone else we
-        grew up around. Something terrible happens, but there is little room to
-        grieve. There is work to do, money to earn, responsibilities to fulfil. The
-        world doesn't stop, so neither can you.
+        It is such a familiar idea. Many of us have seen men (humans, genereally but this song is
+        about toxic masculinity, don't cancel me) in our lives behave this way, whether they are our
+        fathers, grandfathers, or someone else we grew up around. Something terrible happens, but
+        there is little room to grieve. There is work to do, money to earn, responsibilities to
+        fulfil. The world doesn't stop, so neither can you.
       </p>
 
       <p>
-        But who is really responsible for this? Is it the men who were taught to
-        bury their emotions? Is it the generations before them who passed down the
-        same lessons? Or is it a society that leaves so little room for people to
-        stop, grieve, and recover without worrying about what happens to their
-        livelihood?
+        But who is really responsible for this? Is it the men who were taught to bury their
+        emotions? Is it the generations before them who passed down the same lessons? Or is it a
+        society that leaves so little room for people to stop, grieve, and recover without worrying
+        about what happens to their livelihood?
       </p>
 
       <p>Perhaps it is a combination of all three.</p>
 
       <p>
-        What I love about this song is that Kendrick doesn't simply point fingers.
-        He examines the consequences of these inherited attitudes and asks us to do
-        better. Just because our parents and grandparents lived a certain way
-        doesn't mean we must repeat it. We can learn from them without carrying
-        every burden they carried. We can be stronger by being vulnerable, better
-        parents by being emotionally available, and better human beings by
-        recognising that the cycle has to end somewhere.
+        What I love about this song is that Kendrick doesn't simply point fingers. He examines the
+        consequences of these inherited attitudes and asks us to do better. Just because our parents
+        and grandparents lived a certain way doesn't mean we must repeat it. We can learn from them
+        without carrying every burden they carried. We can be stronger by being vulnerable, better
+        parents by being emotionally available, and better human beings by recognising that the
+        cycle has to end somewhere.
       </p>
 
       <p>
-        Kendrick covers a variety of issues throughout this album, and one of them
-        is the experience of his transgender relatives, which he explores in
-        <em>Auntie Diaries</em>. It's almost as if he opens up his auntie's diary
-        and lets us in on his own journey of understanding her identity. What's
-        particularly interesting is how you can hear his understanding change
-        throughout the song. He begins with the language and assumptions he grew up
-        with, stumbling through his understanding of his uncle becoming his aunt,
-        and gradually moves towards accepting his relatives for who they are.
+        Kendrick covers a variety of issues throughout this album, and one of them is the experience
+        of his transgender relatives, which he explores in
+        <em>Auntie Diaries</em>. It's almost as if he opens up his auntie's diary and lets us in on
+        his own journey of understanding her identity. What's particularly interesting is how you
+        can hear his understanding change throughout the song. He begins with the language and
+        assumptions he grew up with, stumbling through his understanding of his uncle becoming his
+        aunt, and gradually moves towards accepting his relatives for who they are.
       </p>
 
       <p>
-        His use of language is deliberate, and it isn't always comfortable to
-        listen to. The song has also attracted criticism for its use of slurs and
-        its portrayal of transgender experiences. But at its heart, it raises a
-        question that I think is particularly important today: what happens when
-        the beliefs we inherit conflict with the humanity of the people around us?
+        His use of language is deliberate, and it isn't always comfortable to listen to. The song
+        has also attracted criticism for its use of slurs and its portrayal of transgender
+        experiences. But at its heart, it raises a question that I think is particularly important
+        today: what happens when the beliefs we inherit conflict with the humanity of the people
+        around us?
       </p>
 
       <p>
-        The line about "choosing humanity over religion" is especially powerful. In a
-        world where people are constantly divided over religion, identity, and
-        ideology, perhaps we need to remind ourselves that the person standing in
-        front of us matters more than our assumptions about them. Faith can be
-        meaningful, but it should never become an excuse to deny someone their
-        dignity. We don't have to understand every aspect of another person's life
-        to treat them with compassion. Sometimes, we simply have to be willing to
-        listen and accept that we might have something to learn.
+        The line about "choosing humanity over religion" is especially powerful. In a world where
+        people are constantly divided over religion, identity, and ideology, perhaps we need to
+        remind ourselves that the person standing in front of us matters more than our assumptions
+        about them. Faith can be meaningful, but it should never become an excuse to deny someone
+        their dignity. We don't have to understand every aspect of another person's life to treat
+        them with compassion. Sometimes, we simply have to be willing to listen and accept that we
+        might have something to learn.
       </p>
 
       <p>
-        And then comes <em>Mother I Sober</em>, arguably one of the heaviest songs
-        on the album. Kendrick explores sexual trauma, family secrets, shame, and
-        the ways pain can travel from one generation to the next. He reflects on his
-        mother's experience of sexual abuse and how her attempts to protect him,
-        driven by her own trauma and fears, affected their relationship and his
-        understanding of himself.
+        And then comes <em>Mother I Sober</em>, arguably one of the heaviest songs on the album.
+        Kendrick explores sexual trauma, family secrets, shame, and the ways pain can travel from
+        one generation to the next. He reflects on his mother's experience of sexual abuse and how
+        her attempts to protect him, driven by her own trauma and fears, affected their relationship
+        and his understanding of himself.
       </p>
 
       <p>
-        What makes this particularly heartbreaking is that the harm doesn't
-        necessarily come from a lack of love. Sometimes, parents act with the best
-        intentions but struggle to communicate their fears in a way their children
-        can understand. Their attempts to protect can unintentionally create
-        confusion, mistrust, and emotional distance.
+        What makes this particularly heartbreaking is that the harm doesn't necessarily come from a
+        lack of love. Sometimes, parents act with the best intentions but struggle to communicate
+        their fears in a way their children can understand. Their attempts to protect can
+        unintentionally create confusion, mistrust, and emotional distance.
       </p>
 
       <p>
-        Kendrick connects these experiences to his own struggles with intimacy and
-        infidelity. He acknowledges the ways he hurt his partner and the damage his
-        actions caused. His partner's decision to encourage him to seek therapy
-        becomes an important part of his journey towards confronting his behaviour
-        rather than continuing to run from it.
+        Kendrick connects these experiences to his own struggles with intimacy and infidelity. He
+        acknowledges the ways he hurt his partner and the damage his actions caused. His partner's
+        decision to encourage him to seek therapy becomes an important part of his journey towards
+        confronting his behaviour rather than continuing to run from it.
       </p>
 
       <p>
-        And that is what makes the song so powerful. Understanding where our
-        problems come from doesn't excuse the harm we cause, but it can help us
-        recognise what needs to change. Healing requires honesty, accountability,
-        and the willingness to break patterns that might have existed in our
-        families for generations. We cannot change everything that happened to us,
+        And that is what makes the song so powerful. Understanding where our problems come from
+        doesn't excuse the harm we cause, but it can help us recognise what needs to change. Healing
+        requires honesty, accountability, and the willingness to break patterns that might have
+        existed in our families for generations. We cannot change everything that happened to us,
         but we can take responsibility for what we do with it.
       </p>
 
       <p>
-        And that's just a handful of songs. Imagine the conversations the rest of
-        the album could inspire. I could easily spend pages writing about each
-        track, unpacking the lyrics and exploring the different ways they make me
-        think. Perhaps I'll do that one day. This album deserves it.
+        And that's just a handful of songs. Imagine the conversations the rest of the album could
+        inspire. I could easily spend pages writing about each track, unpacking the lyrics and
+        exploring the different ways they make me think. Perhaps I'll do that one day. This album
+        deserves it.
+      </p>
+
+      <p>But for now, I want to talk about what it came to mean to me.</p>
+
+      <p>
+        I first listened to <em>Mr. Morale &amp; the Big Steppers</em> in 2022, shortly after moving
+        to Sweden. I'm a lyrics-first listener. I want to understand what an artist is saying, what
+        they're trying to communicate, and what lies beneath the music. I remember thinking this was
+        a heavy album, but I didn't have much to relate to beyond the usual struggles of life. I was
+        in a new country, exploring a new city, living independently for the first time, and
+        enjoying the experience.
       </p>
 
       <p>
-        But for now, I want to talk about what it came to mean to me.
+        When Kendrick announced the tour, I booked the cheapest ticket I could afford as a student
+        living on a loan. I wanted to see one of my favourite artists perform. The concert was
+        extraordinary. The production, the storytelling, the theatricality of it all made it feel
+        like so much more than a concert. Still, I had mostly gone to hear the classics, to sing
+        along to <em>DNA.</em>, <em>HUMBLE.</em>, and the songs I already knew by heart. I came back
+        with incredible memories, and life moved on. The album remained somewhere in my library,
+        something I revisited occasionally without ever really sitting down to listen to it from
+        beginning to end again.
       </p>
 
       <p>
-        I first listened to <em>Mr. Morale &amp; the Big Steppers</em> in 2022,
-        shortly after moving to Sweden. I'm a lyrics-first listener. I want to
-        understand what an artist is saying, what they're trying to communicate,
-        and what lies beneath the music. I remember thinking this was a heavy
-        album, but I didn't have much to relate to beyond the usual struggles of
-        life. I was in a new country, exploring a new city, living independently for
-        the first time, and enjoying the experience.
+        Then came a period in my life when things became shitty in ways I hadn't quite anticipated.
+        My career prospects, personal life, and family all seemed to be testing me at once. Nothing
+        extraordinary, really. Life has been putting people through difficult times for generations,
+        and everyone has their own battles to fight. What feels overwhelming to one person might
+        seem ordinary to another, but that doesn't make it any less real when you're the one going
+        through it. I think, more than anything, I wanted a companion during that time, someone who
+        could make things feel a little less difficult. Instead, circumstances seemed to leave me
+        dealing with most of it on my own.
       </p>
 
       <p>
-        When Kendrick announced the tour, I booked the cheapest ticket I could
-        afford as a student living on a loan. I wanted to see one of my favourite
-        artists perform. The concert was extraordinary. The production, the
-        storytelling, the theatricality of it all made it feel like so much more
-        than a concert. Still, I had mostly gone to hear the classics, to sing
-        along to <em>DNA.</em>, <em>HUMBLE.</em>, and the songs I already knew by
-        heart. I came back with incredible memories, and life moved on. The album
-        remained somewhere in my library, something I revisited occasionally
-        without ever really sitting down to listen to it from beginning to end
-        again.
+        My days gradually settled into a routine: work, gym, dinner, sleep, and then doing it all
+        over again. After the gym, I would walk to a lake in Västerås and sit by the pier, all by
+        myself. Somewhere along the way, I started listening to
+        <em>Mr. Morale &amp; the Big Steppers</em> there. It wasn't something I had planned, nor was
+        I consciously looking for an album to help me through a difficult time. It just happened.
+        I'd sit by the water, put on my headphones, and listen. And then I'd do it again the next
+        day.
       </p>
 
       <p>
-        Then came a period in my life when things became shitty in ways I hadn't
-        quite anticipated. My career prospects, personal life, and
-        family all seemed to be testing me at once. Nothing
-        extraordinary, really. Life has been putting people through difficult times
-        for generations, and everyone has their own battles to fight. What feels
-        overwhelming to one person might seem ordinary to another, but that doesn't
-        make it any less real when you're the one going through it. I think, more
-        than anything, I wanted a companion during that time, someone who could make
-        things feel a little less difficult. Instead, circumstances seemed to leave
-        me dealing with most of it on my own.
-      </p>
-
-      <p>
-        My days gradually settled into a routine: work, gym, dinner, sleep, and then
-        doing it all over again. After the gym, I would walk to a lake in Västerås
-        and sit by the pier, all by myself. Somewhere along the way, I started
-        listening to <em>Mr. Morale &amp; the Big Steppers</em> there. It wasn't
-        something I had planned, nor was I consciously looking for an album to help
-        me through a difficult time. It just happened. I'd sit by the water, put on
-        my headphones, and listen. And then I'd do it again the next day.
-      </p>
-
-      <p>
-        What began as an unplanned routine slowly became something I looked forward
-        to. I started paying attention to the lyrics in a way I hadn't before. The
-        songs I'd once thought were simply heavy began to mean something different
-        to me. Kendrick's words became a constant companion through those quiet
-        evenings, giving me something to sit with when I didn't quite know what to
-        do with everything I was feeling. The album didn't change my circumstances,
-        but it made those moments of solitude feel a little less lonely. Looking
-        back, I'm genuinely glad that this routine found its way into my life.
+        What began as an unplanned routine slowly became something I looked forward to. I started
+        paying attention to the lyrics in a way I hadn't before. The songs I'd once thought were
+        simply heavy began to mean something different to me. Kendrick's words became a constant
+        companion through those quiet evenings, giving me something to sit with when I didn't quite
+        know what to do with everything I was feeling. The album didn't change my circumstances, but
+        it made those moments of solitude feel a little less lonely. Looking back, I'm genuinely
+        glad that this routine found its way into my life.
       </p>
 
       <p>
         By 2024, Kendrick Lamar was my most-listened-to artist on Apple Music, and
-        <em>Mr. Morale &amp; the Big Steppers</em> was my most-listened-to album. I
-        had played it on repeat through a period of my life I wouldn't wish to
-        relive, yet one that changed the way I understood myself and the people
-        around me.
+        <em>Mr. Morale &amp; the Big Steppers</em> was my most-listened-to album. I had played it on
+        repeat through a period of my life I wouldn't wish to relive, yet one that changed the way I
+        understood myself and the people around me.
       </p>
 
       <p>
-        Eventually, things worked out, and I could finally look back at that period
-        with some distance. I still don't know whether the album helped me through
-        it, whether that difficult period made me understand the album, or whether I
-        simply found it again at the moment I needed it most. Perhaps it was a
-        combination of all three.
+        Eventually, things worked out, and I could finally look back at that period with some
+        distance. I still don't know whether the album helped me through it, whether that difficult
+        period made me understand the album, or whether I simply found it again at the moment I
+        needed it most. Perhaps it was a combination of all three.
       </p>
 
       <p>What I do know is that I'm grateful Kendrick made it.</p>
 
       <p>
-        There is something courageous about an artist of his stature stepping away
-        from the role of the person with all the answers and admitting that he, too,
-        needs help. It takes a different kind of strength to expose your
-        shortcomings, confront your trauma, and acknowledge the ways you have hurt
-        others. To turn that process into an album that millions of people can
-        listen to, interpret, and find pieces of themselves in is an extraordinary
-        thing.
+        There is something courageous about an artist of his stature stepping away from the role of
+        the person with all the answers and admitting that he, too, needs help. It takes a different
+        kind of strength to expose your shortcomings, confront your trauma, and acknowledge the ways
+        you have hurt others. To turn that process into an album that millions of people can listen
+        to, interpret, and find pieces of themselves in is an extraordinary thing.
       </p>
 
       <p>
-        And this brings me to <em>Mirror</em>, the song that closes the album. After
-        taking us through grief, anger, shame, family trauma, relationships, and the
-        difficult process of confronting himself, Kendrick arrives at a conclusion
-        that feels both simple and profound.
+        And this brings me to <em>Mirror</em>, the song that closes the album. After taking us
+        through grief, anger, shame, family trauma, relationships, and the difficult process of
+        confronting himself, Kendrick arrives at a conclusion that feels both simple and profound.
       </p>
 
       <p>
-        The album begins with a wish for peace of mind. By the end, Kendrick has
-        accepted that he cannot fix everything around him while neglecting the work
-        he needs to do within himself. He cannot save everyone, solve every problem,
-        or carry the weight of the entire world on his shoulders. At some point, he
-        has to turn his attention towards his own life and begin rebuilding it.
+        The album begins with a wish for peace of mind. By the end, Kendrick has accepted that he
+        cannot fix everything around him while neglecting the work he needs to do within himself. He
+        cannot save everyone, solve every problem, or carry the weight of the entire world on his
+        shoulders. At some point, he has to turn his attention towards his own life and begin
+        rebuilding it.
       </p>
 
       <p>
-        The final line captures this beautifully:
-        “Sorry I couldn't save the world, my friend. I was too busy building mine
-        again.”
+        The final line captures this beautifully: “Sorry I couldn't save the world, my friend. I was
+        too busy building mine again.”
       </p>
 
       <p>What a way to end an album.</p>
 
       <p>
-        We spend so much time worrying about the world, the people around us, and
-        everything that seems to be going wrong. We want to help, fix things, and
-        make everything better. But sometimes, we forget that we're people, too. We
-        have our own struggles, our own wounds, and our own lives to put back
-        together. Taking care of ourselves doesn't mean we stop caring about others.
-        It means recognising that our own healing matters, too.
+        We spend so much time worrying about the world, the people around us, and everything that
+        seems to be going wrong. We want to help, fix things, and make everything better. But
+        sometimes, we forget that we're people, too. We have our own struggles, our own wounds, and
+        our own lives to put back together. Taking care of ourselves doesn't mean we stop caring
+        about others. It means recognising that our own healing matters, too.
       </p>
 
       <p>
-        For me, that is what makes this album so important. It isn't just about
-        Kendrick Lamar. It is about the things we inherit, the pain we carry, and
-        the responsibility we have to ensure that the people who come after us don't
-        have to carry the same burdens.
+        For me, that is what makes this album so important. It isn't just about Kendrick Lamar. It
+        is about the things we inherit, the pain we carry, and the responsibility we have to ensure
+        that the people who come after us don't have to carry the same burdens.
       </p>
 
       <p>
-        I hope the next generation inherits less of our trauma and more of our love.
-        I hope we learn to raise children who feel safe expressing themselves, who
-        know they can ask for help, and who don't have to spend their adulthood
-        unlearning everything they were taught about being human.
+        I hope the next generation inherits less of our trauma and more of our love. I hope we learn
+        to raise children who feel safe expressing themselves, who know they can ask for help, and
+        who don't have to spend their adulthood unlearning everything they were taught about being
+        human.
       </p>
 
       <p>
-        And perhaps that is the greatest thing music can do. It can reach someone
-        sitting alone in a foreign country, with a thousand unanswered questions,
-        and make them feel a little less alone.
+        And perhaps that is the greatest thing music can do. It can reach someone sitting alone in a
+        foreign country, with a thousand unanswered questions, and make them feel a little less
+        alone.
       </p>
 
       <p>
-        Heavy. But sometimes, the things that weigh on us the most are the things
-        that help us understand ourselves. And sometimes, an album can become more
-        than music. It can become a companion through a chapter of your life you
-        might never have known how to get through on your own.
+        Heavy. But sometimes, the things that weigh on us the most are the things that help us
+        understand ourselves. And sometimes, an album can become more than music. It can become a
+        companion through a chapter of your life you might never have known how to get through on
+        your own.
       </p>
 
       <p>
-        This is my first take on <em>Mr. Morale &amp; the Big Steppers</em>, and I'm
-        pretty sure it won't be my last. As time goes on, I'll probably find new
-        meanings in old lyrics, discover new things to appreciate, and find more
-        songs that deserve a shout-out of their own. Maybe I'll come back and add
-        to this, maybe I'll rewrite the whole thing, or maybe I'll write an entirely
-        new essay. Who knows? It's my website, my album review, and my rules. The
-        free world, baby.
+        This is my first take on <em>Mr. Morale &amp; the Big Steppers</em>, and I'm pretty sure it
+        won't be my last. As time goes on, I'll probably find new meanings in old lyrics, discover
+        new things to appreciate, and find more songs that deserve a shout-out of their own. Maybe
+        I'll come back and add to this, maybe I'll rewrite the whole thing, or maybe I'll write an
+        entirely new essay. Who knows? It's my website, my album review, and my rules. The free
+        world, baby.
+      </p>
 
-        <p>
-          Now, back to my writer's block until I pull the motivation to
-          get out of it.
-        </p>
-
+      <p>Now, back to my writer's block until I pull the motivation to get out of it.</p>
     </main>
 
     {% include footer.html %}
