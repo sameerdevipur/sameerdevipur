@@ -40,6 +40,19 @@ Each page declares front matter for its title, description, navigation state, ro
 path, social type, and optional `noindex` behavior. Use `page.root` for local links
 so the site works on both the custom domain and a GitHub Pages project path.
 
+## Article dates
+
+Written travel and Side Quests articles display a shared date line from
+`_includes/article-dates.html`. Set `last_updated: YYYY-MM-DD` in an article's front
+matter and update it when editing the article text. Archived blog posts also keep
+their original publication date in `published_on`. Game entries use individual
+dates in the `article_updates` mapping in `games.html`.
+
+The initial update dates were recovered from Git history by comparing article
+text, excluding formatting and template-only edits. These are recorded editorial
+dates, not deployment timestamps, and do not change automatically on a rebuild.
+Unwritten placeholders remain undated.
+
 ## Quality checks
 
 Run all checks:

@@ -1,0 +1,15 @@
+{%- assign article_updated = include.updated | default: page.last_updated -%}
+{%- if article_updated %}
+  <p class="article-meta">
+    {%- if page.published_on %}
+      Original post date:
+      <time datetime="{{ page.published_on | date: '%Y-%m-%d' }}">
+        {{- page.published_on | date: '%B %-d, %Y' -}}</time
+      ><br>
+    {%- endif %}
+    Last updated:
+    <time datetime="{{ article_updated | date: '%Y-%m-%d' }}">
+      {{- article_updated | date: '%B %-d, %Y' -}}
+    </time>
+  </p>
+{%- endif %}

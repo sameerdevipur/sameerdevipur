@@ -216,6 +216,20 @@ p em {
   color: var(--text-main);
 }
 
+.article-meta {
+  margin-top: 0;
+  color: var(--text-subtle);
+  font-size: 0.85rem;
+}
+
+h1 + .article-meta {
+  margin-top: -1.4rem;
+}
+
+.article-meta time {
+  white-space: nowrap;
+}
+
 /* ==========================================================================
    Figures and images
    ========================================================================== */
